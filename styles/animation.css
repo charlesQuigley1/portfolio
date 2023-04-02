@@ -1,0 +1,92 @@
+:root {
+  --maxStarSize: 3;
+  --maxBlur: 40;
+}
+
+/*This is when we go into portrait mode.*/
+@media  screen and (max-width: 750px) {
+  :root {
+    --maxStarSize: 2;
+  }
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 8s ease-in-out infinite alternate;
+    -moz-animation: glow 8s ease-in-out infinite alternate;
+    animation: glow 8s ease-in-out infinite alternate;
+  }
+
+.c1, .c2 {
+    width: fit-content !important;
+
+}
+
+
+.c1 h2, .c2 h2 {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+}
+
+
+
+.observed .c1 h2{
+    -webkit-animation: typing 1.75s steps(32, end) 1s forwards, blinking 1s;
+    -moz-animation: typing 1.75s steps(32, end) 1s forwards, blinking 1s;
+    animation: typing 1.75s steps(32, end) 1s forwards, blinking 1s;
+  }
+
+.observed .c2 h2{
+    -webkit-animation: typing 1.75s steps(32, end) forwards, blinking 1s infinite;
+    -moz-animation: typing 1.75s steps(32, end) forwards, blinking 1s infinite;
+    animation: typing 1.75s steps(32, end) forwards, blinking 1s infinite;
+    animation-delay: 2.9s;
+}
+
+
+    
+@keyframes typing {
+    0% { 
+        width: 0;
+     }
+    90% { 
+        width: 100%;
+        border-right-color: var(--highlight-color-1);
+    }
+    100% {
+        width: 100%;
+        border-right-color: transparent;
+    }
+}
+  
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: var(--highlight-color-1)}
+    100% {border-right-color: transparent}
+}
+
+@keyframes glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #e63a00);
+      }
+    25% {
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #ffffff);
+      }
+    75% {
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
+      }
+}
+@-webkit-keyframes glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #e63a00);
+      }
+    25% {
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #ffffff);
+      }
+    75% {
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
+      }
+}

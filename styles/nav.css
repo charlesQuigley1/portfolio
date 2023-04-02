@@ -1,0 +1,142 @@
+#mobile-navBar {
+    display: none;
+}
+
+#navBar {
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 26px;
+    font-weight: 700;
+    background-color: transparent;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    z-index: 99;
+}
+
+#navBar ul {
+    width: fit-content;
+    margin: 0 auto;
+    font-family: space;
+}
+
+
+#navBar li {
+    display: inline;
+    color: white;
+    padding: 10px;
+    border: 3px dotted transparent;
+
+    cursor: pointer;
+    transition: border 100ms linear;
+}
+
+#navBar a:link, #navBar a:visited, #navBar a:hover, #navBar a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
+#navBar li:hover {
+    border: 3px dotted white;
+
+}
+
+.navBarScroll {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: #1c011fc0 !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px #0000004f;
+}
+
+/*This is when we go into portrait mode.*/
+@media  screen and (max-width: 750px) {
+    #navBar {
+        display: none;
+    }
+
+    #mobile-navBar {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 60px;
+        z-index: 999;
+        background-color: #1c011fc0;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 5px 10px #0000004f;
+    }
+
+    #mobile-navBar-slideOut {
+        display: block;
+        position: absolute;
+        color: transparent;
+        width: 100%;
+        top: 60px;
+        max-height: 0;
+        height: auto;
+        backdrop-filter: blur(10px);
+        background-color: #1c011fc0;
+        transition: max-height 200ms linear, color 200ms linear, padding 200ms linear;
+    }
+
+    #mobile-navBar-slideOut.mobile-navBar-slideOut-opened {
+        color: white !important;
+        height: fit-content !important;
+        max-height: 50vh !important;
+        padding: 20px 0;
+    }
+
+    #mobile-navBar-burger.mobile-navBar-slideOut-opened span {
+        width: 40px;
+    }
+
+    #mobile-navBar-burger.mobile-navBar-slideOut-opened span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-navBar-burger.mobile-navBar-slideOut-opened span:nth-child(1) {
+        transform: translateY(12px) rotateZ(45deg);
+    }
+
+    #mobile-navBar-burger.mobile-navBar-slideOut-opened span:nth-child(3) {
+        transform: translateY(-11px) rotateZ(-45deg);
+    }
+
+
+
+    #mobile-navBar-slideOut ul {
+        text-align: center;
+    }
+
+    #mobile-navBar a:link, #mobile-navBar a:visited, #mobile-navBar a:hover, #mobile-navBar a:active{
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.3em;
+        line-height: 1.8em;
+    }
+
+    #mobile-navBar-burger {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 6px;
+        left: 30px;
+    }
+
+    #mobile-navBar-burger span {
+        display: block;
+        background-color: #dadada;
+        border-radius: 20px;
+        width: 50px;
+        height: 4px;
+        margin-top: 8px;
+        transition: transform 50ms linear;
+    }
+
+}

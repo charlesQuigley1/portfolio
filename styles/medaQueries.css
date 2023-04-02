@@ -1,0 +1,653 @@
+
+
+@media  screen and (max-width: 1500px) {
+    #footer-content {
+        width: 98%;
+        justify-content: space-evenly;
+    }
+
+    #footer-content > div {
+        width: initial;
+    }
+    
+}
+
+@media  screen and (max-width: 1200px) {
+    #about-flex-1 h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    #about-flex-1 h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+    #contact {
+        width: 100%;
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #about-flex-1 h2 {
+        font-size: 1.2em;
+    }
+
+    .modal-content {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
+
+/*This is when we go into portrait mode.*/
+@media  screen and (max-width: 750px) {
+
+    #profileTextBubble {
+        display: none;
+    }
+
+    section {
+        margin: 0 40px;
+    }
+
+    #about-flex-2 {
+        margin-top: 80px;
+    }
+
+    #about-flex-1 > div:nth-child(1) {
+        width: 60%;
+    }
+
+    #about-flex-1 > div:nth-child(2) {
+        width: 40%;
+    }
+
+    #about-flex-2 > div:nth-child(1) {
+        width: 40%;
+    }
+
+    #about-flex-2 > div:nth-child(2) {
+        width: 60%;
+    }
+
+    #about-flex-3 {
+        margin: 30px 30px 70px;
+    }
+
+    #about-flex-3 > div:nth-child(1) {
+        width: 60%;
+    }
+
+    #about-flex-3 > div:nth-child(2) {
+        width: 40%;
+    }
+
+    #about-flex-1 h2 {
+        font-size: 1.2em;
+    }
+
+    #about-flex-2 h2 {
+        font-size: 1.1em;
+        line-height: 2em;
+    }
+
+    #about-flex-3 h2 {
+        font-size: 1.1em;
+    }
+
+    .about-image img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #title {
+        top: 26%;
+    }
+
+    #innerTitleBox h2 {
+        font-size: 3em;
+    }
+
+    #outerTitleBox {
+        padding: 30px;
+    }
+    
+    #innerTitleBox {
+        padding: 10px;
+    }
+
+
+    .cItem {
+        width: 200px;
+        height: 260px;
+        margin: 0 10px;
+    }
+
+    #footer-content {
+        width: 98%;
+        justify-content: space-evenly;
+    }
+
+    #footer-content > div {
+        width: initial;
+    }
+    
+
+    #footer-content img {
+        width: 140px;
+    }
+
+    #footer-content h4 {
+        font-size: 1.1em;
+    }
+
+    #footer-content #footer-nav li {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 650px) { 
+
+    #contact-section, #skills-section {
+        margin-bottom: 40px;
+    }
+
+    #hero_profilepic {
+        transform: translateY(10px);
+    }
+
+    #hero_profilepic div {
+        width: 150px;
+        height: 150px;
+    }
+
+    #hero_profilepic div img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #about-flex-1 > div:nth-child(1) {
+        width: 70%;
+    }
+
+    #about-flex-1 > div:nth-child(2) {
+        width: 30%;
+    }
+
+    #about-flex-2 > div:nth-child(1) {
+        width: 30%;
+    }
+
+    #about-flex-2 > div:nth-child(2) {
+        width: 70%;
+    }
+
+    #about-flex-3 > div:nth-child(1) {
+        width: 70%;
+    }
+
+    #about-flex-3 > div:nth-child(2) {
+        width: 30%;
+    }
+
+    #about {
+        margin-top: 80px; 
+    }
+
+    #about-flex-1 h2 {
+        font-size: 1.1em;
+    }
+
+    .about-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #about-flex-2 h2 {
+        font-size: 1em;
+    }
+
+    #contactTitle {
+        font-size: 1.3em;
+    }
+
+    #footer-content img {
+        width: 120px;
+    }
+
+    #footer-content h4 {
+        font-size: 1em;
+    }
+
+    #footer-content #footer-nav li {
+        font-size: 0.8em;
+    }
+
+    #footer-content li ul li {
+        font-size: 0.8em;
+    }
+
+    .cItem {
+        width: 160px;
+        height: 220px;
+    }
+
+    .cItem button img {
+        width: 120px;
+        padding: 0 0 40px;
+    }
+}
+
+@media  screen and (max-width: 550px) {   
+    
+    section {
+        margin: 0 20px;
+    }
+
+    #wave-divider {
+        display: none;
+    }
+
+    #hero_profilepic {
+        transform: translateY(70px);
+    }
+
+    #innerTitleBox h2 {
+        font-size: 2em;
+    }
+
+    #innerTitleBox h4 {
+        font-size: 1.5em;
+        padding: 20px 0 0 0;
+    }
+
+    #title {
+        top: 35%;
+    }
+
+    #about {
+        margin-top: 100px;
+    }
+
+    #contact-section, #skills-section {
+        margin-bottom: 60px;
+    }
+
+    #about-flex-2 {
+        margin-top: 50px;
+    }
+
+    #about-flex-3 h2 {
+        font-size: 1em;
+    }
+
+    #about-flex-3 {
+        margin: 20px 20px 30px;
+    }
+
+    #outerTitleBox {
+        border: 3px dotted rgba(255, 255, 255, 0.4);
+    }
+
+    #innerTitleBox {
+        border: 2px dotted rgba(255, 255, 255, 0.3);
+    }
+
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 60px 0;
+    }
+
+    #footer-content > div {
+        padding-bottom: 20px;
+    }
+
+    #footer-content > div > div {
+        text-align: center;
+    }
+
+    #footer-content img {
+        width: 120px;
+        margin: 0;
+    }
+
+    #footer-content h4 {
+        font-size: 1.5em;
+    }
+
+    #footer-content #footer-nav li {
+        font-size: 1.2em;
+    }
+
+    #footer-content li ul li {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 500px)  {
+    .backgroundImg {
+        background: url(../images/space_mobile.png);
+        background-color: #1c011f7d;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #about {
+        margin: 120px 10px 0 20px;
+
+    }
+
+    #about-flex-2 {
+        flex-direction: column-reverse;
+    }
+
+    .about-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #about-flex-2 .about-image img {
+        margin-top: 30px;
+    }
+
+    #contact-section, #skills-section {
+        margin-bottom: 40px;
+    }
+
+    #about-flex-1 > div:nth-child(1) {
+        width: 80%;
+    }
+
+    #about-flex-1 > div:nth-child(2) {
+        width: 20%;
+    }
+
+    #about-flex-2 > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #about-flex-2 > div:nth-child(2) {
+        width: 100%;
+    }
+
+    #about-flex-3 > div:nth-child(1) {
+        width: 80%;
+    }
+
+    #about-flex-3 > div:nth-child(2) {
+        width: 20%;
+    }
+
+    #about-flex-3 {
+        margin: 20px 10px 50px 20px;
+    }
+
+    .carousel-wrapper {
+        min-height: 200px;
+    }
+
+    .carousel-btn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .right-carousel-btn {
+        right: -30px;
+    }
+
+    .left-carousel-btn {
+        left: -30px;
+    }
+
+    .carousel-btn svg {
+        width: 40px;
+        height: 40px;
+        display: block;
+        padding: 0 4px;
+    }
+
+    .cItem button img {
+        width: 100px;
+    }
+
+    .cItem {
+        width: 130px;
+        height: 180px;
+        border-radius: 12px;
+        margin: 0 5px;
+    }
+
+    #contact form input {
+        width: 60%;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    #hero_header {
+        height: 600px;
+    }
+
+    #outerTitleBox {
+        padding: 10px;
+    }
+
+    #about {
+        margin: 130px 10px 0 20px;
+    }
+
+    #about-flex-1 > div:nth-child(1) {
+        width: 85%;
+    }
+
+    #about-flex-1 > div:nth-child(2) {
+        width: 15%;
+    }
+
+    #about-flex-2 > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #about-flex-2 > div:nth-child(2) {
+        width: 100%;
+    }
+
+    #about-flex-3 > div:nth-child(1) {
+        width: 80%;
+    }
+
+    #about-flex-3 > div:nth-child(2) {
+        width: 20%;
+    }
+
+    #about-flex-1 h2 {
+        font-size: 1em;
+    }
+
+    .about-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #about-flex-2 h2 {
+        font-size: 0.9em;
+    }
+
+    #about-flex-3 h2 {
+        font-size: 0.9em;
+    }
+
+    .carousel-btn svg {
+        width: 30px;
+        height: 30px; 
+    }
+
+    .carousel-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .right-carousel-btn {
+        right: -20px;
+    }
+
+    .left-carousel-btn {
+        left: -20px;
+    }
+
+    .cItem button img {
+        width: 90px;
+    }
+
+    .cItem {
+        width: 110px;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    .cItem button img {
+        width: 90px;
+        padding: 0 0 20px;
+    }
+
+    #contactTitle {
+        font-size: 1.2em;
+    }
+
+    #contact form input {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #innerTitleBox h4 {
+        font-size: 1.2em;
+        padding: 10px 0 0 0;
+    }
+
+    #about-flex-1 h2 {
+        font-size: 0.9em;
+    }
+
+    .about-image img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #about-flex-2 h2 {
+        font-size: 0.85em;
+    }
+
+    #about-flex-3 h2 {
+        font-size: 0.85em;
+    }
+
+    #contact form button {
+        width: 200px;
+        padding: 8px;
+    }
+
+    #footer-content h4 {
+        font-size: 1.2em;
+    }
+
+    #footer-content #footer-nav li {
+        font-size: 1em;
+    }
+
+    #footer-content li ul li {
+        font-size: 1em;
+    }
+
+    #footer-content img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #innerTitleBox h2 {
+        font-size: 1.5em;
+    }
+
+    #innerTitleBox h4 {
+        font-size: 1em;
+    }
+
+    #about {
+        margin: 130px 10px 0 10px;
+    }
+
+    #about-flex-1 {
+       flex-direction: column;
+    }
+
+    #about-flex-1 .about-image img {
+        margin-top: 30px;
+    }
+
+    #about-flex-3 {
+        flex-direction: column;
+     }
+
+     #about-flex-3 .about-image img {
+        margin-top: 30px;
+    }
+
+    #about-flex-1 > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #about-flex-1 > div:nth-child(2) {
+        width: 100%;
+    }
+
+    #about-flex-2 > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #about-flex-2 > div:nth-child(2) {
+        width: 100%;
+    }
+
+    #about-flex-3 > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #about-flex-3 > div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #hero_profilepic div {
+        width: 130px;
+        height: 130px;
+    }
+
+    #hero_profilepic div img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #about-flex-1 h2 {
+        font-size: 0.8em;
+    }
+
+    #about-flex-2 h2 {
+        font-size: 0.7em;
+    }
+
+    #about-flex-3 h2 {
+        font-size: 0.7em;
+    }
+}

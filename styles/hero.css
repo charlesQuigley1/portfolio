@@ -1,0 +1,164 @@
+#hero_wrapper {
+    position: relative;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+}
+
+
+#wave-divider {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: -55px;
+    left: 0;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+
+}
+
+
+
+#hero_header{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+canvas {
+    position: relative;
+    z-index: 2;
+
+}
+
+
+.backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/space.jpg");
+    z-index: 1;
+    opacity: 100%;
+    background-color: #1c011f7d;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero_profilepic {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(40px);
+    z-index: 5;
+}
+
+#hero_profilepic div {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    background: linear-gradient(180deg, #e600ff, #ff7700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#hero_profilepic div img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+#profileTextBubble {
+    position: absolute;
+    width: max-content;
+    padding: 20px;
+    background-color: rgb(91, 89, 89);
+    color: white;
+    font-family: space;
+    top: -30px;
+    transform: translateX(140px);
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.3s;
+}
+
+#profileTextBubble::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 65px solid rgb(91, 89, 89);
+    position: absolute;
+    top: 59%;
+    left: 20%;
+    transform: rotate(60deg);
+    z-index: -1;
+}
+
+.showTextBubble {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#title {
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 22%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: space;
+    z-index: 4;
+    color: transparent;
+    text-shadow: 0 0 #ffffff61;
+}
+
+#outerTitleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: 2px dotted rgba(255, 255, 255, 0.4);
+}
+
+#innerTitleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+#innerTitleBox h2 {
+    font-size: 4em;
+}
+
+#innerTitleBox h4 {
+    font-size: 2em;
+    padding: 10px 0 0 0;
+}
+
+
+#hero_clip {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    top: 45vh;
+    z-index: 4;
+}

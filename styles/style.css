@@ -1,0 +1,295 @@
+@font-face {
+    font-family: space;
+    src: url(../fonts/SpaceMono-Bold.ttf);
+}
+
+:root {
+    --main-color: #1c011f;
+    --highlight-color-1: #ff7700;
+    --highlight-color-2: #e600ff;
+}
+
+html, * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    font-family: space;
+
+}
+
+section {
+    margin: 0 80px;
+}
+
+
+#contact-section, #skills-section {
+    margin-bottom: 80px;
+}
+
+
+#about {
+    margin-top: 100px;
+    background-color: white;
+    color: rgb(30, 30, 30);
+    position: relative;
+    z-index: 3;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-flex div {
+    width: 50%;
+}
+
+.about-image img {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.about-image img {
+    width: 100px;
+    height: 100px;
+}
+
+
+#about-flex-1 h2 {
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+#about-flex-2 {
+    margin-top: 100px;
+}
+
+#about-flex-2 h2 {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+#about-flex-3 {
+    margin: 30px 80px 70px;
+    color: white;
+}
+
+#about-flex-3 h2 {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.highlight-1 {
+    color: var(--highlight-color-1);
+}
+
+.highlight-2 {
+    color: var(--highlight-color-2);
+}
+
+#skills {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 0 80px;
+    background-image: url(../images/space.jpg);
+   /* background-color: #1c011f91;
+    background-blend-mode: overlay;*/
+    
+}
+
+#skillsContent, #contactContent {
+    position: relative;
+    z-index: 2;
+}
+
+#contactContent {
+    padding: 20px;
+}
+
+
+#skills, #contact {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#skills {
+    z-index: 5;
+}
+
+#skillsWrapper, #contactWrapper {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    left: 0;
+}
+
+#contact {
+    box-shadow: 0 2px 30px rgb(170, 164, 164);
+    border-radius: 20px;
+    background-color: #3b004172;
+    background-image: url(../images/space.jpg);
+    /*background-blend-mode: overlay;
+    background-size: cover;*/
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactTitle {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #d80aa1;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+#contact form label {
+    color: white;
+    margin: 0 0 10px 4px;
+}
+
+#contact form input, #contact form textarea {
+    padding: 4px;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(113, 113, 113);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none !important;
+    resize: none;
+}
+
+#contact form input {
+    width: 40%;
+}
+
+#contact form button {
+    margin: 10px auto 0;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #500259;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    transition: background-color 100ms linear, border 100ms linear, box-shadow 100ms linear;
+}
+
+#contact form button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    box-shadow: 0 0 10px white;
+}
+
+
+#footer {
+    background-color: #500259;
+    color: white;
+    margin: 120px 0 0 0;
+
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0 80px 0;
+}
+
+#footer-content > div {
+    width: 33%;
+}
+
+#footer-content > div > div {
+    display: block;
+    width: inherit;
+    margin: 0 auto;
+}
+
+#footer-content img, #footer-content ul {
+    display: block;
+    margin: 0 auto;
+}
+
+#footer-content img {
+    padding-top: 10px;
+    width: 180px;
+}
+
+#footer-content h4{
+    font-size: 1.3em;
+    line-height: 2em;
+    color: var(--highlight-color-1);
+}
+
+#footer-content ul {
+    list-style: none;
+}
+
+#footer-content #footer-nav li {
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+#footer-content li ul {
+    padding-left: 0;
+}
+
+#footer-content li ul li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #1c011f;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e600ff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d400eb;
+}
+
+
+  

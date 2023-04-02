@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles' Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/hero.css" />
+    <link rel="stylesheet" type="text/css" href="styles/nav.css" />
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="styles/modal.css" />
+    <link rel="stylesheet" type="text/css" href="styles/animation.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medaQueries.css" />
+</head>
+<body>
+    <div id="top-section"></div>
+    <div id="mobile-navBar">
+        <div id="mobile-navBar-burger" onclick="burgerClick()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mobile-navBar-slideOut">
+            <ul>
+                <li><a href="#top-section" onclick="burgerClick()">Home</a></li>
+                <li><a href="#about-section" onclick="burgerClick()">About</a></li>
+                <li><a href="#skills-section" onclick="burgerClick()">Skills</a></li>
+                <li><a href="#contact-section" onclick="burgerClick()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="navBar">
+        <ul>
+            <li><a href="#top-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </div>
+    <div id="hero_header">
+        <div id="hero_wrapper">
+            <canvas id="hero_image" data-star-count="40"></canvas>
+            <div id="title" class="glow">
+                <div id="outerTitleBox">
+                    <div id="innerTitleBox">
+                        <h2>Charles Quigley</h2>
+                        <h4>Full-Stack Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="hero_backgroundImg" class="backgroundImg"></div>
+        </div>
+        <div id="wave-divider">
+            <svg width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="none" >
+                <circle fill="transparent" cx="125" cy="0" r="20"></circle>
+                <circle fill="transparent" cx="375" cy="500" r="20"></circle>
+                <path fill="#ffffff" d="M0 250 Q125 0 250 250 L250 500 L0 500 L0 250"></path>
+                <path fill="#ffffff" d="M250 250 Q375 500 500 250 L500 500 L250 500 L 250 250"></path>
+            </svg>
+        </div>
+        <div id="hero_profilepic">
+            <div>
+                <img src="images/profPic.jpg" alt="profile picture" />
+                <h3 id="profileTextBubble">Hey 👋</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-section"></div>
+
+    <section id="about" class="intersect">
+        <div id="about-flex-1" class="about-flex">
+            <div id="about-title">
+                <div class="c1">
+                    <h2>Hi, my name is <span class="highlight-2">Charles Quigley,</span></h2>
+                </div>
+                <div class="c2">
+                    <h2 id="c2">And I'm a <span class="highlight-1">Full-Stack Developer.</span></h2>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="./images/peace.svg" />
+            </div>
+        </div>
+        <div id="about-flex-2" class="about-flex">
+            <div class="about-image">
+                <img src="./images/rocket.svg" />
+            </div>
+            <div id="about-description"> <!--class="fly-in-bottom"-->
+                <h2>I graduated with honors from Texas A&M University-Corpus Christi in Decemeber 2021,</h2>
+                <h2>and have been developing and leveraging my knowledge of front-end and back-end web development in the work force for the past year.</h2>
+            </div>
+        </div>
+    </section>
+
+    <div id="skills-section"></div>
+
+    <section id="skills">
+        <div id="skillsWrapper">
+            <canvas data-star-count="20"></canvas>
+            <div id="skills_backgroundImg" class="backgroundImg"></div>
+        </div>
+        <div id="skillsContent">
+            <div id="about-flex-3" class="about-flex">
+                <div>
+                    <h2>Here are some of the <span class="highlight-2">technologies</span> that I've been working with. Click on the <span class="highlight-1">cards</span> if you'd like to know more.</h2>
+                </div>
+                <div class="about-image">
+                    <img src="./images/technology.svg" />
+                </div>
+            </div>
+            <div class="carousel-wrapper"></div>
+        </div>
+    </section>
+
+    <!-- Another section about what I'm looking for in work-->
+
+    <div id="contact-section"></div>
+    
+    <section id="contact">
+        <div id="contactWrapper">
+            <canvas data-star-count="20"></canvas>
+            <div id="contact_backgroundImg" class="backgroundImg"></div>
+        </div>
+        <div id="contactContent">
+            <div id="contactTitle"><h2>Contact Me</h2></div>
+            <form action="https://formsubmit.co/7b39648cf2e52e64cef3af94fe3d51ed" method="POST">
+                <label>Name</label>
+                <input type="text" name="name" required>
+                <label>Email</label>
+                <input type="email" name="email" required>
+                <label>Message</label>
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" maxlength="1500" required></textarea>
+                <button type="submit">Send</button>
+           </form>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div id="footer-content">
+            <div>
+                <img src="./images/list-columns-reverse.svg" alt="footer_image" />
+            </div>
+            <div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul id="footer-nav">
+                        <li><a href="#hero_header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li><h4>Email</h4>
+                            <ul><li id="emailAdd">cquigleyportfolio@gmail.com</li></ul>
+                        </li>
+                        <li><h4>Resume</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/hero_image.js"></script>
+    <script type="text/javascript" src="js/ProfilePicture_Textbubble.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/carouselBuild.js"></script>
+    <script type="text/javascript" src="js/carouselArrows.js"></script>
+    <script type="text/javascript" src="js/intersect.js"></script>
+
+    <script>
+        window.onload = async () => {
+            drawCanvases();
+            initializeTextBubble();
+            await buildCarouselHTML();
+            initializeCarouselScroll();
+            initializeModalOutClick();
+            initializeObservers();
+        }
+    </script>
+</body>
+</html>
