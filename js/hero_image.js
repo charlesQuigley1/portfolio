@@ -3,6 +3,11 @@ let maxStarSize = window.getComputedStyle(document.documentElement).getPropertyV
 let maxBlur = window.getComputedStyle(document.documentElement).getPropertyValue("--maxBlur");
 
 function drawCanvases() {
+
+    if (window.innerWidth < 750) {
+        return;
+    }
+
     let canvases = document.querySelectorAll("canvas");
     
     canvases.forEach(canvas => {
@@ -124,7 +129,6 @@ window.addEventListener("resize", (e) => {
 function animateStars(c, ctx, stars, maxStarSize, maxBlur, fps) {
     fillBackground(ctx, c.width, c.height);
     drawStars(c, ctx, stars, maxStarSize, maxBlur);
-    console.log(maxStarSize);
     setTimeout(() => {
         requestAnimationFrame(function() {
             animateStars(c, ctx, stars, maxStarSize, maxBlur, fps);
