@@ -19,24 +19,25 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: var(--main-color);
     overflow-x: hidden;
     font-family: space;
 
 }
 
 section {
-    margin: 0 80px;
+    padding: 0 80px;
 }
 
 
 #contact-section, #skills-section {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    background-color: white;
 }
 
 
 #about {
-    margin-top: 100px;
+    padding-top: 100px;
     background-color: white;
     color: rgb(30, 30, 30);
     position: relative;
@@ -101,7 +102,6 @@ section {
 #skills {
     margin-left: 0;
     margin-right: 0;
-    padding: 20px 0 80px;
     background-image: url(../images/space.jpg);
    /* background-color: #1c011f91;
     background-blend-mode: overlay;*/
@@ -122,10 +122,18 @@ section {
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding: 0;
+}
+
+#contactSection {
+    background-color: white;
+    padding: 0 0 120px 0;
+
 }
 
 #skills {
     z-index: 5;
+    padding: 20px 0 80px;
 }
 
 #skillsWrapper, #contactWrapper {
@@ -139,10 +147,7 @@ section {
 #contact {
     box-shadow: 0 2px 30px rgb(170, 164, 164);
     border-radius: 20px;
-    background-color: #3b004172;
     background-image: url(../images/space.jpg);
-    /*background-blend-mode: overlay;
-    background-size: cover;*/
     width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -208,7 +213,6 @@ section {
 #footer {
     background-color: #500259;
     color: white;
-    margin: 120px 0 0 0;
 
 }
 

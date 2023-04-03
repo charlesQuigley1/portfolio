@@ -112,6 +112,7 @@
 
     #mobile-navBar-slideOut ul {
         text-align: center;
+        list-style-type: none;
     }
 
     #mobile-navBar a:link, #mobile-navBar a:visited, #mobile-navBar a:hover, #mobile-navBar a:active{
