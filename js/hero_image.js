@@ -4,6 +4,8 @@ let maxBlur = window.getComputedStyle(document.documentElement).getPropertyValue
 
 function drawCanvases() {
 
+    alert(window.innerWidth);
+
     if (window.innerWidth < 750) {
         return;
     }

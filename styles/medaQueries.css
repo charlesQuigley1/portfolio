@@ -333,7 +333,7 @@
 
 @media screen and (max-width: 500px)  {
     .backgroundImg {
-        background: url(../images/space_mobile.png);
+       /* background: url(../images/space_mobile.png);*/
         background-color: #1c011f7d;
         background-blend-mode: overlay;
         background-repeat: no-repeat;
