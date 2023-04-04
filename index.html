@@ -14,6 +14,11 @@
     <link rel="stylesheet" type="text/css" href="styles/modal.css" />
     <link rel="stylesheet" type="text/css" href="styles/animation.css" />
     <link rel="stylesheet" type="text/css" href="styles/medaQueries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="top-section"></div>
@@ -43,6 +48,7 @@
     <div id="hero_header">
         <div id="hero_wrapper">
             <canvas id="hero_image" data-star-count="40"></canvas>
+            <div id="hero_backgroundImg" class="backgroundImg"></div>
             <div id="title" class="glow">
                 <div id="outerTitleBox">
                     <div id="innerTitleBox">
@@ -51,14 +57,17 @@
                     </div>
                 </div>
             </div>
-            <div id="hero_backgroundImg" class="backgroundImg"></div>
         </div>
-        <div id="wave-divider">
-            <svg width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="none" >
+        <div class="wave-divider">
+            <svg class="desktop-divider" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="none" >
                 <circle fill="transparent" cx="125" cy="0" r="20"></circle>
                 <circle fill="transparent" cx="375" cy="500" r="20"></circle>
                 <path fill="#ffffff" d="M0 250 Q125 0 250 250 L250 500 L0 500 L0 250"></path>
                 <path fill="#ffffff" d="M250 250 Q375 500 500 250 L500 500 L250 500 L 250 250"></path>
+            </svg>
+            <svg class="mobile-divider" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="none" >
+                <circle fill="blue" cx="250" cy="250" r="20"></circle>
+                <path fill="#ffffff" d="M0 0 Q240 200 500 0 L500 500 L 0 500 L 0 0"></path>
             </svg>
         </div>
         <div id="hero_profilepic">
@@ -94,6 +103,9 @@
                 <h2>and have been developing and leveraging my knowledge of front-end and back-end web development in the work force for the past year.</h2>
             </div>
         </div>
+        <div class="wave-divider">
+            <svg class="mobile-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,101.3C384,85,480,139,576,133.3C672,128,768,64,864,58.7C960,53,1056,107,1152,106.7C1248,107,1344,53,1392,26.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </div>
     </section>
 
     <div id="skills-section"></div>
@@ -110,11 +122,21 @@
                 </div>
                 <div class="about-image">
                     <img src="./images/technology.svg" />
+                    <img class="mobile-image" src="./images/technology-white.svg"/>
                 </div>
             </div>
             <div class="carousel-wrapper"></div>
         </div>
+        <div class="wave-divider">
+            <svg class="mobile-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,101.3C384,85,480,139,576,133.3C672,128,768,64,864,58.7C960,53,1056,107,1152,106.7C1248,107,1344,53,1392,26.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+         </div>
     </section>
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="clickOutOfModal('buttonClick')">&#x2715;</div>
+        </div>
+    </div>
 
     <!-- Another section about what I'm looking for in work-->
 
@@ -141,6 +163,7 @@
         </section>
     </div>
 
+    <div id="footer-section"></div>
 
     <section id="footer">
         <div id="footer-content">

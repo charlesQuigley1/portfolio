@@ -29,8 +29,15 @@ section {
     padding: 0 80px;
 }
 
+.mobile-divider {
+    display: none;
+}
 
-#contact-section, #skills-section {
+.desktop-divider {
+    display: block;
+}
+
+#contact-section, #skills-section, #footer-section {
     padding-bottom: 80px;
     background-color: white;
 }
@@ -102,10 +109,14 @@ section {
 #skills {
     margin-left: 0;
     margin-right: 0;
-    background-image: url(../images/space.jpg);
+   /* background-image: url(../images/space.jpg);*/
    /* background-color: #1c011f91;
     background-blend-mode: overlay;*/
     
+}
+
+#skills .about-image .mobile-image {
+    display: none;
 }
 
 #skillsContent, #contactContent {

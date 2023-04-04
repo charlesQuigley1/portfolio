@@ -73,20 +73,20 @@
         filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #e63a00);
       }
     25% {
-        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #ffffff);
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
       }
     75% {
-        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #142bd8);
       }
 }
 @-webkit-keyframes glow {
-    0%, 100% {
-        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #e63a00);
-      }
-    25% {
-        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #ffffff);
-      }
-    75% {
-        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
-      }
+  0%, 100% {
+    filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #e63a00);
+  }
+25% {
+    filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
+  }
+75% {
+    filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #142bd8);
+  }
 }

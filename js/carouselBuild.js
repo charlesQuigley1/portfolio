@@ -56,8 +56,8 @@ function buildItem(item) {
     htmlStr += "<h3 class=\"title\">" + item.title + "</h3>";
 
     htmlStr += "</button>";
-    htmlStr += "<div id=\"" + modalName + "\" class=\"modal\">";
-    htmlStr += "<div class=\"modal-content\">"
+    htmlStr += "<div id=\"" + modalName + "\">";
+    htmlStr += "<div class=\"modal-data\">"
     htmlStr += "</div>";
     htmlStr += "</div>"; 
     htmlStr += "</div>";

@@ -4,11 +4,11 @@ function initializeModalOutClick() {
 
 function clickOutOfModal(evt) {
     let mod = document.querySelector(".modal.open");
-    let parentElem = mod.parentElement;
-    let modBtn = parentElem.querySelector("button");
+    //let parentElem = mod.parentElement;
+    //let modBtn = parentElem.querySelector("button");
     let modContent = mod.querySelector(".modal-content");
 
-    if (evt.target !== modContent && evt.target !== modBtn) {
+    if (evt.target !== modContent || evt === "buttonClick") {
         mod.classList.remove("open");
     }
 }
@@ -16,15 +16,13 @@ function clickOutOfModal(evt) {
 function showModal(modalID) {
     new Promise((resolve, reject) => {
         window.removeEventListener("click", clickOutOfModal);
-        console.log("here");
         resolve();
     }).then(() => {
-        console.log("there");
-        let mods = document.querySelectorAll(".modal");
-        let mod = document.querySelector('#' + modalID);
-        mods.forEach(m => {
+        let mod = document.querySelector(".modal");
+        //let mod = document.querySelector('#' + modalID);
+       /* mods.forEach(m => {
             m.classList.remove("open");
-        });
+        });*/
     
         mod.classList.add("open");
     }).then(() => {

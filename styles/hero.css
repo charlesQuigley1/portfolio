@@ -6,7 +6,7 @@
 }
 
 
-#wave-divider {
+.wave-divider {
     position: absolute;
     transform: scaleX(-1);
     bottom: -55px;
