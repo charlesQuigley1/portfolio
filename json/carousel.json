@@ -4,8 +4,10 @@
         "title": "Node.js",
         "image": "./images/logos/300px/node-js-logo-300px.png",
         "detail": {
-            "description" : "",
-            "image": ""
+            "description" : "I helped maintain the server-side code for a previous employer. The back-end used the Express.js framework in the Node.js environment. EJS was also used for faster development and deployment of web pages. During my time at this company, I helped develop various web pages and their corresponding components, such as carousels, results pages, watchlist pages, pages for sports schedules, etc.",
+            "image": "./images/work/channelGuide.png",
+            "title_highlight": "#319494",
+            "text_color": "#113535"
         }
     },
     {

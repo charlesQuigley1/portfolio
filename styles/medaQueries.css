@@ -1,6 +1,23 @@
 
+@media (hover: none) { 
+    #resume_btn a:hover {
+        padding: 8px 60px;
+    }
 
-@media  screen and (max-width: 1500px) {
+    #resume_btn a:hover span {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    #contact form button:hover {
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        background-color: #500259;
+        box-shadow: none;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
     #footer-content {
         width: 98%;
         justify-content: space-evenly;
@@ -58,6 +75,27 @@
         background-position: top;
     }
 
+    .modal {
+        font-family: 'Ubuntu';
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-dynamic-data a {
+        width: fit-content;
+        display: block;
+        margin: 0;
+    }
+
+    .modal-dynamic-data img {
+        width: 100%;
+        margin: 0;
+        border-radius: 0 0 20px 20px;
+        border-top: 2px solid #696969;
+    }
+
     .wave-divider {
         z-index: 6;
         bottom: -180px;
@@ -76,6 +114,13 @@
         z-index: 6;
     }
 
+    #resume .wave-divider {
+        transform: scaleX(-1) !important;
+        bottom: -88px;
+        z-index: 6;
+
+    }
+
     #hero_profilepic {
         transform: translateY(70px);
     }
@@ -92,10 +137,30 @@
         z-index: 6;
     }
 
-    #about {
+    #about, #resume {
         z-index: 6;
         font-family: 'Ubuntu';
     }
+
+    #about, #resume, .modal-content {
+        font-family: 'Ubuntu';
+        color: var(--soft-text-color);
+    }
+
+    #about-flex-4 {
+        flex-direction: column;
+    }
+
+    #about-flex-4 div {
+        width: 100%;
+    }
+
+    #resume_btn {
+        margin: 40px auto;
+        width: fit-content !important;
+    }
+
+
 
     #skills .about-image img {
         margin-top: 0;
@@ -151,10 +216,11 @@
         z-index: 7;
     }
 
-    #contact-section, #skills-section, #footer-section {
+    #contact-section, #skills-section, #footer-section, #resume-section {
         z-index: 6;
         position: relative;
-        display: none;
+        height: 0;
+        padding: 0;
     }
 
     #contact-section {
@@ -176,6 +242,12 @@
         position: relative;
     }
 
+    #about-flex-4 .highlight-1, #about-flex-4 .highlight-2 {
+        color: white;
+        position: relative;
+        padding: 0 10px 2px;
+    }
+
     #about-flex-3 .highlight-1::after, #about-flex-3 .highlight-2::after {
         content: '';
         position: absolute;
@@ -186,11 +258,30 @@
         z-index: -1;
     }
 
+    #about-flex-4 .highlight-1::after, #about-flex-4 .highlight-2::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: rotateZ(2deg) skewX(8deg);
+    }
+
     #about-flex-3 .highlight-1:after {
         background-color: #ff7700a1;
     }
 
     #about-flex-3 .highlight-2:after {
+        background-color: #e600ffa8;
+    }
+
+    #about-flex-4 .highlight-1:after {
+        background-color: #ff7700a1;
+    }
+
+    #about-flex-4 .highlight-2:after {
         background-color: #e600ffa8;
     }
 
@@ -253,6 +344,7 @@
         margin: 0 10px;
     }
 
+
     #footer {
         z-index: 6;
         position: relative;
@@ -285,7 +377,7 @@
 @media screen and (max-width: 650px) { 
 
     #contact-section, #skills-section, #footer-section {
-        padding-bottom: 40px;
+        padding: 0;
     }
 
     #hero_profilepic {
@@ -385,7 +477,7 @@
     }
 
     #contact-section, #skills-section, #footer-section {
-        padding-bottom: 60px;
+        padding: 0;
     }
 
     #about-flex-2 {
@@ -466,7 +558,7 @@
     }
 
     #contact-section, #skills-section, #footer-section {
-        padding-bottom: 40px;
+        padding: 0;
     }
 
     
@@ -529,7 +621,6 @@
 
     #about {
         padding: 130px 10px 60px 20px;
-        color: #585858;
     }
 
 
@@ -587,6 +678,10 @@
 
     #contactTitle {
         font-size: 1.2em;
+    }
+
+    #contactContent {
+        padding: 160px 20px 0;
     }
 
     #contact form input {

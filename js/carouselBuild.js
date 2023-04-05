@@ -57,7 +57,14 @@ function buildItem(item) {
 
     htmlStr += "</button>";
     htmlStr += "<div id=\"" + modalName + "\">";
-    htmlStr += "<div class=\"modal-data\">"
+    htmlStr += "<div class=\"modal-data\">";
+    htmlStr += "<div class=\"modal-data-title inModal\">";
+    htmlStr += "<h3 class=\"inModal\" style=\"--modal-title-color: " + item.detail.title_highlight + "\">" + item.title + "</h3>"
+    htmlStr += "<div class=\"modal-close\" onclick=\"clickOutOfModal('buttonClick')\">&#x2715;</div>";
+    htmlStr += "</div>"
+    console.log(item);
+    htmlStr += "<p class=\"inModal\" style=\"color:" + item.detail.text_color + "\">" + item.detail.description + "</p>";
+    htmlStr += "<a class=\"inModal\" href=" + item.detail.image + "> <img class=\"inModal\" src=\"" + item.detail.image + "\"></a>"
     htmlStr += "</div>";
     htmlStr += "</div>"; 
     htmlStr += "</div>";

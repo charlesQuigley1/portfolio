@@ -7,6 +7,7 @@
     --main-color: #1c011f;
     --highlight-color-1: #ff7700;
     --highlight-color-2: #e600ff;
+    --soft-text-color: #585858;
 }
 
 html, * {
@@ -43,13 +44,14 @@ section {
 }
 
 
-#about {
+#about, #resume {
     padding-top: 100px;
     background-color: white;
     color: rgb(30, 30, 30);
     position: relative;
     z-index: 3;
 }
+
 
 .about-flex {
     display: flex;
@@ -97,6 +99,47 @@ section {
     font-size: 1.2em;
     line-height: 2em;
 }
+
+#about-flex-4 h2 {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+#resume_btn {
+    width: fit-content;
+    background: linear-gradient(90deg, #e600ff, #ff7700);
+    border-radius: 50px;
+}
+
+#resume_btn a:link, #resume_btn a:visited, #resume_btn a:hover, #resume_btn a:active {
+    text-decoration: none;
+    color: white;
+    padding: 8px 60px;
+    display: block;
+    position: relative;
+    transition: padding 200ms ease-in-out;
+}
+
+#resume_btn a span {
+    position: absolute;
+    opacity: 0;
+    right: 20px;
+    transform: translateX(-200%);
+    transition: transform 200ms ease-in-out, opacity 200ms linear;;
+}
+
+
+#resume_btn a:hover {
+    padding: 8px 100px 8px 20px;
+}
+
+#resume_btn a:hover span {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 
 .highlight-1 {
     color: var(--highlight-color-1);
