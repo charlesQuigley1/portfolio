@@ -56,7 +56,7 @@
     .modal-content {
         position: relative;
         width: 100%;
-        margin: 0 20px;
+        margin: 0 auto;
         z-index: 1;
     }
 }
@@ -80,13 +80,19 @@
     }
 
     .modal-content {
-        width: 90%;
+        width: 96%;
+    }
+
+    .modal-dynamic-data {
+        display: flex;
+        flex-direction: column;
+        min-height: inherit;
     }
 
     .modal-dynamic-data a {
         width: fit-content;
         display: block;
-        margin: 0;
+        margin: auto 0 0 0;
     }
 
     .modal-dynamic-data img {
@@ -115,8 +121,9 @@
     }
 
     #resume .wave-divider {
-        transform: scaleX(-1) !important;
-        bottom: -88px;
+        /*transform: scaleX(-1) !important;*/
+        /*bottom: -88px;*/
+        bottom: -230px;
         z-index: 6;
 
     }
@@ -149,6 +156,8 @@
 
     #about-flex-4 {
         flex-direction: column;
+        z-index: 7;
+        position: relative;
     }
 
     #about-flex-4 div {

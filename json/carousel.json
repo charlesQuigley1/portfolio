@@ -16,7 +16,9 @@
         "image": "./images/logos/300px/mysql-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "",
+            "title_highlight": "linear-gradient(90deg, #2994d4, #f7971d)"
+            
         }
     },
     {
@@ -25,7 +27,8 @@
         "image": "./images/logos/300px/rest-api-logo-300px.svg",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "",
+            "title_highlight": "#13ad99"
         }
     },
     {
@@ -34,7 +37,9 @@
         "image": "./images/logos/300px/html5-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "",
+            "title_highlight": "#f16529"
+
         }
     },
     {
@@ -43,7 +48,8 @@
         "image": "./images/logos/300px/css3-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "",
+            "title_highlight": "#3082c6"
         }
     },
     {
@@ -52,7 +58,8 @@
         "image": "./images/logos/300px/js-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "",
+            "title_highlight": "#d1aa23"
         }
     },
     {
@@ -61,7 +68,8 @@
         "image": "./images/logos/300px/python-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "",
+            "title_highlight": "linear-gradient(90deg, #3770a0, #ffcf3e)"
         }
     },
     {
@@ -70,7 +78,8 @@
         "image": "./images/logos/300px/wordpress-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": ""
+            "image": "./images/work/wordpress.png",
+            "title_highlight": "#56add2"
         }
     }
 
