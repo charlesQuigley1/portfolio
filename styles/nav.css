@@ -71,7 +71,7 @@
         background-color: var(--main-color);
         border: 2px solid var(--main-color);
         border-width: 2px 0 2px 0;
-        backdrop-filter: blur(10px);
+        /*backdrop-filter: blur(10px);*/
         box-shadow: 0 5px 10px #0000004f;
     }
 

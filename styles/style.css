@@ -521,15 +521,13 @@ section {
 }
 
 ::-webkit-scrollbar {
-    width: 14px;
+    width: auto;
 }
-  
-  /* Track */
+ 
 ::-webkit-scrollbar-track {
     background: #1c011f;
 }
   
-  /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #e600ff;
     border-radius: 5px;
