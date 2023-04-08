@@ -11,11 +11,12 @@
 }
 
 .glow {
-    color: #fff;
+    color: #fff !important;
     text-align: center;
-    -webkit-animation: glow 8s ease-in-out infinite alternate;
+   /* -webkit-animation: glow 8s ease-in-out infinite alternate;
     -moz-animation: glow 8s ease-in-out infinite alternate;
-    animation: glow 8s ease-in-out infinite alternate;
+    animation: glow 8s ease-in-out infinite alternate;*/
+   
 }
 
 
