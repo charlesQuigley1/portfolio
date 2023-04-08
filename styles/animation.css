@@ -16,7 +16,8 @@
     -webkit-animation: glow 8s ease-in-out infinite alternate;
     -moz-animation: glow 8s ease-in-out infinite alternate;
     animation: glow 8s ease-in-out infinite alternate;
-  }
+}
+
 
 .c1, .c2 {
     width: fit-content !important;
@@ -88,5 +89,41 @@
   }
 75% {
     filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #142bd8);
+  }
+}
+
+@keyframes funBtn {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@-webkit-keyframes funBtn {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@keyframes funBtn-mobile {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300px 0;
+  }
+}
+
+@-webkit-keyframes funBtn-mobile {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300px 0;
   }
 }

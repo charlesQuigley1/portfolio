@@ -4,8 +4,6 @@ let maxBlur = window.getComputedStyle(document.documentElement).getPropertyValue
 
 function drawCanvases() {
 
-    alert(window.innerWidth);
-
     if (window.innerWidth < 750) {
         return;
     }
@@ -57,11 +55,12 @@ function createStarObjs(c, numStars, maxStarSize, maxBlur) {
     let strokeColor = "#FFFFFF";
     let shadowColor = "#FFFFFF";
     let colors = ["#FF7171", "#FFB471", "#FFF971", "#B4FF71", "#71FFA0", "#71F9FF", "#719AFF", "#D471FF", "#FF71E7"];
+    let minStarSize = 1;
 
     for (let i = 0; i < numStars; i++) {
         let x = Math.floor(Math.random() * c.width);
         let y = Math.floor(Math.random() * c.height);
-        let r = Math.floor(Math.random() * maxStarSize);
+        let r = Math.floor(Math.random() * (maxStarSize - maxStarSize + 1) + minStarSize);
         let shadowBlur = Math.floor(Math.random() * maxBlur);
         let fillColor = colors[Math.floor(Math.random() * colors.length)];
 

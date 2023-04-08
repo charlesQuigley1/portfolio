@@ -81,6 +81,7 @@
 
     .modal-content {
         width: 96%;
+        transform: translateY(300px);
     }
 
     .modal-dynamic-data {
@@ -174,7 +175,6 @@
     #skills .about-image img {
         margin-top: 0;
         position: relative;
-        display: none;
     }
 
     #skills .about-image .mobile-image {
@@ -217,12 +217,44 @@
         width: 20%;
     }
 
+    #about-flex-4 > div {
+        margin: 0;
+    }
+
+    #about-flex-4 > div > div {
+        margin: 40px auto !important;
+    }
+
+    #about-flex-4 > div:nth-child(1) {
+        flex-direction: column;
+    }
+
+    #about-flex-4 > div:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    #about-flex-4 > div:nth-child(3) {
+        flex-direction: column;
+
+    }
+
+
     #title {
         z-index: 1;
     }
 
     #hero_profilepic {
         z-index: 7;
+    }
+
+    #contact {
+        box-shadow: none;
+        background: none;
+        border: none;
+    }
+
+    #contact::after {
+        display: none;
     }
 
     #contact-section, #skills-section, #footer-section, #resume-section {
@@ -641,6 +673,10 @@
         margin-top: 50px;
         width: 50px;
         height: 50px;
+    }
+
+    #about-flex-4 .about-image img {
+        margin: 0 auto;
     }
 
 

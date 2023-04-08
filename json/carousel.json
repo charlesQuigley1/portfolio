@@ -7,7 +7,8 @@
             "description" : "I helped maintain the server-side code for a previous employer. The back-end used the Express.js framework in the Node.js environment. EJS was also used for faster development and deployment of web pages. During my time at this company, I helped develop various web pages and their corresponding components, such as carousels, results pages, watchlist pages, pages for sports schedules, etc.",
             "image": "./images/work/channelGuide.png",
             "title_highlight": "#319494",
-            "text_color": "#113535"
+            "text_color": "#113535",
+            "additional_html": ""
         }
     },
     {
@@ -16,8 +17,9 @@
         "image": "./images/logos/300px/mysql-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": "",
-            "title_highlight": "linear-gradient(90deg, #2994d4, #f7971d)"
+            "image": "./images/work/mySQL.png",
+            "title_highlight": "linear-gradient(90deg, #2994d4, #f7971d)",
+            "additional_html": ""
             
         }
     },
@@ -27,8 +29,9 @@
         "image": "./images/logos/300px/rest-api-logo-300px.svg",
         "detail": {
             "description" : "",
-            "image": "",
-            "title_highlight": "#13ad99"
+            "image": "./images/work/RESTfulAPI.png",
+            "title_highlight": "#13ad99",
+            "additional_html": ""
         }
     },
     {
@@ -37,9 +40,9 @@
         "image": "./images/logos/300px/html5-logo-300px.png",
         "detail": {
             "description" : "",
-            "image": "",
-            "title_highlight": "#f16529"
-
+            "image": "./images/work/htmlGif.gif",
+            "title_highlight": "#f16529",
+            "additional_html": ""
         }
     },
     {
@@ -49,7 +52,9 @@
         "detail": {
             "description" : "",
             "image": "",
-            "title_highlight": "#3082c6"
+            "title_highlight": "#3082c6",
+            "additional_html": "<div id=\"CSS-example\" class=\"inModal\" onclick=\"openVideo('modal-vid-1')\">CSS⚡Rocks!</div>",
+            "video_url": "https://www.youtube.com/embed/vOkj7gRQ3z8"
         }
     },
     {
@@ -59,7 +64,8 @@
         "detail": {
             "description" : "",
             "image": "",
-            "title_highlight": "#d1aa23"
+            "title_highlight": "#d1aa23",
+            "additional_html": ""
         }
     },
     {
@@ -69,7 +75,8 @@
         "detail": {
             "description" : "",
             "image": "",
-            "title_highlight": "linear-gradient(90deg, #3770a0, #ffcf3e)"
+            "title_highlight": "linear-gradient(90deg, #3770a0, #ffcf3e)",
+            "additional_html": ""
         }
     },
     {
@@ -79,7 +86,8 @@
         "detail": {
             "description" : "",
             "image": "./images/work/wordpress.png",
-            "title_highlight": "#56add2"
+            "title_highlight": "#56add2",
+            "additional_html": ""
         }
     }
 

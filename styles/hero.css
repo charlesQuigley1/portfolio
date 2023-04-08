@@ -3,6 +3,7 @@
     background-color: var(--main-color);
     height: 100%;
     width: 100%;
+    z-index: 6;
 }
 
 
@@ -10,13 +11,56 @@
     position: absolute;
     transform: scaleX(-1);
     bottom: -55px;
+    bottom: 0;
     left: 0;
     width: 100%;
     color: white;
     overflow: hidden;
     line-height: 0;
-    z-index: 2;
+    z-index: 6;
+    height: fit-content;
 
+}
+
+#hero_header .wave-divider {
+    margin-bottom: -4px;
+}
+
+#skills .wave-divider {
+    position: relative;
+    top: 0;
+    z-index: 7;
+
+}
+
+#skills .wave-divider.skills-divider-1 {
+    transform: scaleX(-1);
+    top: 0;
+    z-index: 7;
+}
+
+
+#skills .wave-divider.skills-divider-2 {
+    transform: scaleX(-1) rotateZ(180deg);
+    top: 0;
+    z-index: 7;
+}
+
+#contactSection .wave-divider {
+    position: relative;
+    top: 0;
+    bottom: none;
+    z-index: 7;
+    transform: scaleX(-1) rotateZ(180deg);
+    margin-top: -4px;
+}
+
+#about {
+    margin-bottom: -4px;
+}
+
+#resume {
+    margin-top: -4px;
 }
 
 
@@ -24,7 +68,7 @@
 #hero_header{
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 750px;
 }
 
 canvas {
@@ -35,44 +79,44 @@ canvas {
 
 
 .backgroundImg {
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../images/space.jpg");
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: url("../images/hd-wallpaper.png");
+    transform: rotateZ(180deg);
     z-index: 1;
     opacity: 100%;
-    background-color: #1c011f7d;
-    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
 }
 
 #hero_profilepic {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-    bottom: 0;
-    transform: translateY(40px);
-    z-index: 5;
+    z-index: 7;
+    margin: 0 0 60px 0;
 }
 
 #hero_profilepic div {
-    position: relative;
-    width: 190px;
-    height: 190px;
-    background: linear-gradient(180deg, #e600ff, #ff7700);
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(180deg, #f47434, #f03bfa);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-top:10px;
 }
 
 #hero_profilepic div img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
@@ -122,7 +166,7 @@ canvas {
     justify-content: center;
     align-items: center;
     font-family: space;
-    z-index: 4;
+    z-index: 1;
     color: transparent;
     text-shadow: 0 0 #ffffff61;
 }

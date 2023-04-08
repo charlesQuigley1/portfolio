@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<defs>
+    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+      <stop offset="10%" stop-color="#e600ff" />
+      <stop offset="95%" stop-color="#ff7700" />
+    </linearGradient>
+</defs>
+<circle style="fill:#ff7700;" cx="82.76" cy="371.76" r="41.384"/>
+<g>
+	<path style="fill:#ff7700;" d="M80.92,512l-39.536-86.44c0,0-41.384,0.92-41.384,38.624V512H80.92z"/>
+	<path style="fill:#ff7700;" d="M84.6,512l39.544-86.44c0,0,41.384,0.92,41.384,38.624V512H84.6z"/>
+</g>
+<polygon style="fill:#ff7700;" points="53.84,425.56 82.76,489.928 111.68,425.56 "/>
+<circle style="fill:#e600ff;" cx="429.24" cy="41.384" r="41.384"/>
+<g>
+	<path style="fill:#e600ff;" d="M427.4,181.664L387.856,95.2c0,0-41.384,0.92-41.384,38.624v47.816L427.4,181.664z"/>
+	<path style="fill:#e600ff;;" d="M431.08,181.664L470.616,95.2c0,0,41.384,0.944,41.384,38.648v47.816H431.08z"/>
+</g>
+<polygon style="fill:#e600ff;" points="400.32,95.224 429.24,159.592 458.16,95.224 "/>
+<circle style="fill:#f1358c;" cx="256" cy="206.552" r="41.384"/>
+<g>
+	<path style="fill:#f1358c;" d="M254.16,346.832l-39.544-86.44c0,0-41.384,0.92-41.384,38.624v47.816H254.16z"/>
+	<path style="fill:#f1358c;" d="M257.84,346.832l39.544-86.44c0,0,41.384,0.92,41.384,38.624v47.816H257.84z"/>
+</g>
+<polygon style="fill:#f1358c;" points="227.08,260.392 256,324.76 284.92,260.392 "/>
+<g>
+	<polygon style="fill:url('#myGradient');" points="90.768,252.552 74.768,252.552 74.768,74.76 252.552,74.76 252.552,90.76 90.768,90.76 	"/>
+	<polygon style="fill:url('#myGradient');" points="437.24,437.232 259.448,437.232 259.448,421.232 421.24,421.232 421.24,259.448 
+		437.24,259.448 	"/>
+</g>
+</svg>

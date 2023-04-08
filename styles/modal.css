@@ -50,7 +50,7 @@
     box-shadow: 4px 4px 20px #424242;
     border-radius: 20px;
     transform: translateY(200px);
-    transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.28, 1.35);
+    transition: transform 0.3s cubic-bezier(0, 1.91, 0.83, 1.25);
     z-index: 101;
     overflow: hidden;
     position: relative;
@@ -130,4 +130,8 @@
 .open {
     visibility: visible !important;
     opacity: 1 !important;
+}
+
+.youtube-data {
+    display: none;
 }

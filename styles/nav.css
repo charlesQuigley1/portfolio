@@ -51,7 +51,7 @@
     font-size: 20px !important;
     font-weight: 500 !important;
     background-color: #1c011fc0 !important;
-    backdrop-filter: blur(10px);
+   /* backdrop-filter: blur(10px);*/
     box-shadow: 0 5px 10px #0000004f;
 }
 
@@ -85,6 +85,7 @@
         height: auto;
         background-color: var(--main-color);
         transition: max-height 200ms linear, color 200ms linear, padding 200ms linear;
+        visibility: hidden;
     }
 
     #mobile-navBar-slideOut.mobile-navBar-slideOut-opened {
@@ -92,6 +93,7 @@
         height: fit-content !important;
         max-height: 50vh !important;
         padding: 20px 0;
+        visibility: visible;
     }
 
     #mobile-navBar-burger.mobile-navBar-slideOut-opened span {

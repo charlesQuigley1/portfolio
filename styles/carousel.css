@@ -19,9 +19,8 @@
     position: relative;
     display: block;
     background: linear-gradient(#3e3e3e59, #444141b3) border-box, linear-gradient(225deg, #fbf9f9ab, #1d758900) padding-box;
-    width: 220px;
-    width: 220px;
-    height: 280px;
+    width: 210px;
+    height: 265px;
     margin: 0 20px;
     border: 3px solid rgb(180 180 180 / 63%);
     border-radius: 20px;
