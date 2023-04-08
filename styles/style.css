@@ -183,6 +183,31 @@ section {
     background-color: #e600ffa8;
 }
 
+#footer .highlight-1, #footer .highlight-2 {
+    color: white;
+    position: relative;
+    padding: 0 10px 2px;
+}
+
+#footer .highlight-1::after, #footer .highlight-2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotateZ(2deg) skewX(8deg);
+}
+
+#footer .highlight-1:after {
+    background-color: #ff7700;
+}
+
+#footer .highlight-2:after {
+    background-color: #e600ffa8;
+}
+
 #about-flex-4 > div {
     display: flex;
     flex-direction: row;
@@ -445,12 +470,12 @@ section {
 }
 
 #footer-content > div {
-    width: 33%;
+    width: 100%;
 }
 
 #footer-content > div > div {
-    display: block;
-    width: inherit;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -468,6 +493,7 @@ section {
     font-size: 1.3em;
     line-height: 2em;
     color: var(--highlight-color-1);
+    text-align: center;
 }
 
 #footer-content ul {

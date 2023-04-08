@@ -62,7 +62,8 @@ function createStarObjs(c, numStars, maxStarSize, maxBlur) {
         let y = Math.floor(Math.random() * c.height);
         let r = Math.floor(Math.random() * (maxStarSize - maxStarSize + 1) + minStarSize);
         let shadowBlur = Math.floor(Math.random() * maxBlur);
-        let fillColor = colors[Math.floor(Math.random() * colors.length)];
+        //let fillColor = colors[Math.floor(Math.random() * colors.length)];
+        let fillColor = strokeColor;
 
         let star = {
             "x" : x,
