@@ -529,12 +529,17 @@ section {
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #e600ff;
-    border-radius: 5px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #e600ff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d400eb;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background: #ff7300;
 }
 
 
