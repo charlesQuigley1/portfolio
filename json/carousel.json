@@ -9,7 +9,7 @@
             "image": "./images/work/channelGuide.png",
             "title_highlight": "#319494",
             "text_color": "#113535",
-            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#319494;border-color:#319494;--shadow:4px 4px 0 #319494, 8px 8px 0 #319494;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#319494\"></div>"
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#319494;border-color:#319494;--shadow:4px 4px 0 #319494, 8px 8px 0 #319494;\">SHOW IMAGE <div><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\"> <path d=\"m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\"/></svg></div></div><div class=\"inModal imgDivider\" style=\"background-color:#319494\"></div>"
         }
     },
     {
@@ -22,7 +22,7 @@
             "image": "./images/work/mySQL.png",
             "title_highlight": "linear-gradient(90deg, #2994d4, #2994d4 49%, #f7971d 50%, #f7971d)",
             "text_color": "#003c60",
-            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#2994d4;border-color:#2994d4;--shadow:4px 4px 0 #2994d4, 8px 8px 0 #2994d4;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#2994d4\"></div>"            
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#2994d4;border-color:#2994d4;--shadow:4px 4px 0 #2994d4, 8px 8px 0 #2994d4;\">SHOW IMAGE <div><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\"> <path d=\"m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\"/></svg></div></div><div class=\"inModal imgDivider\" style=\"background-color:#2994d4\"></div>"            
         }
     },
     {
@@ -35,7 +35,7 @@
             "image": "./images/work/RESTful_API.png",
             "title_highlight": "#13ad99",
             "text_color": "#073e37",
-            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#13ad99;border-color:#13ad99;--shadow:4px 4px 0 #13ad99, 8px 8px 0 #13ad99;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#13ad99\"></div>"
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#13ad99;border-color:#13ad99;--shadow:4px 4px 0 #13ad99, 8px 8px 0 #13ad99;\">SHOW IMAGE <div><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\"> <path d=\"m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\"/></svg></div></div><div class=\"inModal imgDivider\" style=\"background-color:#13ad99\"></div>"
         }
     },
     {
@@ -48,7 +48,7 @@
             "image": "./images/work/htmlGif.gif",
             "title_highlight": "#f16529",
             "text_color": "#804f4f",
-            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#f16529;border-color:#f16529;--shadow:4px 4px 0 #f16529, 8px 8px 0 #f16529;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#f16529\"></div>"
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#f16529;border-color:#f16529;--shadow:4px 4px 0 #f16529, 8px 8px 0 #f16529;\">SHOW IMAGE <div><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\"> <path d=\"m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\"/></svg></div></div><div class=\"inModal imgDivider\" style=\"background-color:#f16529\"></div>"
 
         }
     },
