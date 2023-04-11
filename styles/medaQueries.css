@@ -65,6 +65,11 @@
 
 /*This is when we go into portrait mode.*/
 @media  screen and (max-width: 750px) {
+    #about {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
     .backgroundImg {
         background: url("../images/hd-wallpaper.png");
        /* background-color: #1c011f54; */
@@ -110,15 +115,8 @@
         transform: none;
     }
 
-    #about .wave-divider {
-        transform: scaleX(-1) !important;
-        bottom: -90px;
-        z-index: -1;
-    }
-
     #skills .wave-divider {
         transform: scaleX(-1) !important;
-        bottom: -20px;
         z-index: 6;
     }
 
@@ -130,9 +128,7 @@
 
     }
 
-    #hero_profilepic {
-        transform: translateY(70px);
-    }
+
 
     .desktop-divider {
         display: none;
@@ -239,6 +235,10 @@
 
     }
 
+    #about-flex-4 h2 {
+        font-size: 1.5em;
+    }
+
 
     #title {
         z-index: 1;
@@ -274,10 +274,43 @@
         z-index: 6;
     }
 
+    #skillsContent {
+        margin: 0;
+    }
+
+    #contactContent {
+        margin: 80px 0 0;
+    }
+
+
+    .carousel-wrapper {
+        margin: 0 0 30px 0;
+    }
+
     #skills {
         z-index: auto;
         font-family: 'Ubuntu';
     }
+
+    #resume {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+
+    #resume_btn a:link, #resume_btn a:visited, #resume_btn a:hover, #resume_btn a:active, #contact form button {
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 14px 80px;
+    }
+
+    #contact form button {
+        border-radius: 50px;
+        font-weight: 200;
+        margin-top: 80px;
+        padding: 14px 100px;
+    }
+
+    
 
     #about-flex-3 .highlight-1, #about-flex-3 .highlight-2 {
         color: inherit;
@@ -336,7 +369,7 @@
     }
 
     #about-flex-2 {
-        margin-top: 80px;
+        margin-top: 0;
     }
 
 
@@ -346,21 +379,33 @@
 
 
     #about-flex-1 h2 {
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     #about-flex-2 h2 {
-        font-size: 1.1em;
+        font-size: 1.5em;
         line-height: 2em;
     }
 
     #about-flex-3 h2 {
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .about-image img {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
+    }
+
+    #about-flex-1 img {
+        margin: 60px auto;
+    }
+
+    #about-flex-2 div .about-image  {
+        margin: 60px auto 0;
+    }
+
+    #about-flex-1 > div:nth-child(1), #about-flex-2 > div:nth-child(1) {
+        margin-right: 0;
     }
     
     #title {
@@ -414,6 +459,20 @@
         font-size: 1em;
     }
 
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 40px 0;
+    }
+
+    #footer-content > div {
+        padding-bottom: 20px;
+    }
+
+    #footer-content > div > div > ul > li > ul {
+        padding-bottom: 20px;
+    }
+
 }
 
 @media screen and (max-width: 650px) { 
@@ -422,9 +481,6 @@
         padding: 0;
     }
 
-    #hero_profilepic {
-        transform: translateY(10px);
-    }
 
     #hero_profilepic div {
         width: 110px;
@@ -437,26 +493,12 @@
     }
 
 
-    #about {
-        padding-top: 80px; 
-    }
-
-    #about-flex-1 h2 {
-        font-size: 1.1em;
-    }
 
     .about-image img {
         width: 80px;
         height: 80px;
     }
 
-    #about-flex-2 h2 {
-        font-size: 1em;
-    }
-
-    #contactTitle {
-        font-size: 1.3em;
-    }
 
     #footer-content img {
         width: 120px;
@@ -498,7 +540,15 @@
 
 
     #hero_profilepic {
-        transform: translateY(55px);
+        margin: 0 0 20px 0;
+    }
+
+    #about-flex-1 h2 {
+        font-size: 1.5em;
+    }
+
+    #about-flex-2 h2 {
+        font-size: 1.2em;
     }
 
     #innerTitleBox h2 {
@@ -520,10 +570,6 @@
 
     #contact-section, #skills-section, #footer-section {
         padding: 0;
-    }
-
-    #about-flex-2 {
-        margin-top: 50px;
     }
 
     #about-flex-3 h2 {
@@ -578,13 +624,10 @@
 @media screen and (max-width: 500px)  {
 
     #about {
-        padding: 120px 10px 0 20px;
+        padding: 0 10px 0 20px;
 
     }
 
-    #skills {
-        padding: 20px 0 160px;
-    }
 
     #about-flex-2 {
         flex-direction: column-reverse;
@@ -595,9 +638,18 @@
         height: 70px;
     }
 
-    #about-flex-2 .about-image img {
-        margin-top: 30px;
+    #about-flex-1 img {
+        margin: 50px auto;
     }
+
+    #about-flex-2 div .about-image {
+        margin: 50px auto 30px;
+    }
+
+    #about-flex-3 h2 {
+        font-size: 1.2em;
+    }
+
 
     #contact-section, #skills-section, #footer-section {
         padding: 0;
@@ -606,11 +658,24 @@
     
 
     #about-flex-3 {
-        margin: 100px 10px 50px 20px;
+        margin: 50px 10px 50px 20px;
+    }
+
+    #about-flex-4 h2 {
+        font-size: 1.2em;
+    }
+
+    #about-flex-4 > div > div {
+        margin: 25px auto !important;
+    }
+
+    #resume_btn a:link, #resume_btn a:visited, #resume_btn a:hover, #resume_btn a:active, #contact form button {
+        font-size: 1.2em;
     }
 
     .carousel-wrapper {
         min-height: 200px;
+        margin: 0 0 60px 0;
 
     }
 
@@ -662,7 +727,7 @@
     }
 
     #about {
-        padding: 130px 10px 60px 20px;
+        padding: 0 10px 0 20px;
     }
 
 
@@ -671,15 +736,29 @@
     }
 
     .about-image img {
-        margin-top: 50px;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #about-flex-3 > div:nth-child(1) {
+        margin-right: 10px;
     }
 
     #about-flex-4 .about-image img {
         margin: 0 auto;
     }
 
+    #about-flex-3 {
+        margin: 40px 10px 50px 20px;
+    }
+
+    .carousel-wrapper {
+        margin: 0 0 50px 0;
+    }
+
+    #about-flex-4 h2 {
+        font-size: 1.1em;
+    }
 
     #about-flex-2 h2 {
         font-size: 1.1em;
@@ -727,7 +806,7 @@
     }
 
     #contactContent {
-        padding: 160px 20px 0;
+        padding: 20px 20px 0;
     }
 
     #contact form input {
@@ -756,11 +835,6 @@
 
     #about-flex-3 h2 {
         font-size: 0.85em;
-    }
-
-    #contact form button {
-        width: 200px;
-        padding: 8px;
     }
 
     #footer-content h4 {
@@ -800,6 +874,10 @@
 
     #about-flex-1 .about-image img {
         margin-top: 30px;
+    }
+
+    #about-flex-4 h2 {
+        font-size: 1.1em;
     }
 
     #about-flex-3 {

@@ -1,7 +1,7 @@
 function initializeObservers() {
     if("IntersectionObserver" in window){
         attachObservers();
-        //killObservers();
+      
     }
     else {
         killObservers();
@@ -13,20 +13,48 @@ function attachObservers() {
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            console.log(entry);
             if (entry.isIntersecting) {
-                console.log(entry);
                 entry.target.classList.add("observed");
             }
         })
     },
     {
         rootMargin: '0px 0px -50px 0px',
-        threshold: 1, // 3/4 of the element is in view
+        threshold: 1
     });
 
     items.forEach(item => {
         observer.observe(item);
+    });
+
+    let sections = document.querySelectorAll(".section");
+    console.log(sections);
+
+    const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            console.log(entry.target);
+
+            let navBarItems = document.querySelectorAll("#navBar li");
+            for (let i = 0; i < navBarItems.length; i++) {
+                if (entry.isIntersecting) {
+                    if (navBarItems[i].classList[0] === entry.target.id) {
+                        console.log(navBarItems[i].classList[0]);
+                        navBarItems[i].classList.add("sectionActive");
+                    }
+                    else {
+                        navBarItems[i].classList.remove("sectionActive");
+                    }
+                }
+            }
+        })
+    },
+    {
+        rootMargin: '0px 0px 0px 0px',
+        threshold: 0.5
+    });
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
     });
 
 }

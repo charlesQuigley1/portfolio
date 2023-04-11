@@ -9,7 +9,10 @@ function showModal(modalID) {
     let modalPlaceholder = document.querySelector(".modal-dynamic-data");
     modalPlaceholder.innerHTML = modalData.innerHTML;
 
+    let modal_background = modalPlaceholder.querySelector(".modal-background-color");
+
     let mod = document.querySelector(".modal");
+    mod.style.backgroundColor = modal_background.innerText;
     mod.classList.add("open");
 }
 

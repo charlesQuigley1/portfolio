@@ -58,6 +58,7 @@ function buildItem(item) {
     htmlStr += "</button>";
     htmlStr += "<div id=\"" + modalName + "\">";
     htmlStr += "<div class=\"modal-data\">";
+    htmlStr += "<div class=\"inModal modal-background-color\">" + item.modal_background_color + "</div>";
     htmlStr += "<div class=\"modal-data-title inModal\">";
     htmlStr += "<h3 class=\"inModal\" style=\"--modal-title-color: " + item.detail.title_highlight + "\">" + item.title + "</h3>"
     htmlStr += "<div class=\"modal-close\" onclick=\"clickOutOfModal('buttonClick')\">&#x2715;</div>";

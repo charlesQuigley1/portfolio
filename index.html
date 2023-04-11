@@ -38,14 +38,14 @@
     </div>
     <div id="navBar">
         <ul>
-            <li><a href="#top-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#skills-section">Skills</a></li>
-            <li><a href="#resume-section">Resume</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li class="hero_header"><a href="#top-section">Home</a></li>
+            <li class="about"><a href="#about-section">About</a></li>
+            <li class="skills"><a href="#skills-section">Skills</a></li>
+            <li class="resume"><a href="#resume-section">Resume</a></li>
+            <li class="contact"><a href="#contact-section">Contact</a></li>
         </ul>
     </div>
-    <div id="hero_header">
+    <div id="hero_header" class="section">
         <div id="hero_wrapper">
             <canvas id="hero_image" data-star-count="25"></canvas>
             <div id="hero_backgroundImg" class="backgroundImg"></div>
@@ -131,7 +131,7 @@
 
     <div id="about-section"></div>
 
-    <section id="about">
+    <section id="about" class="section">
         <div id="hero_profilepic">
             <svg
                width="200mm"
@@ -244,8 +244,10 @@
             </div>
         </div>
         <div id="about-flex-2" class="about-flex intersect">
-            <div class="about-image leftright-3 left">
-                <img src="./images/rocket.svg" />
+            <div>
+                <div class="about-image leftright-3 left">
+                    <img src="./images/rocket.svg" />
+                </div>
             </div>
             <div id="about-description right" class="leftright-4 right"> 
                 <h2>I graduated with honors from Texas A&M University-Corpus Christi in Decemeber 2021,</h2>
@@ -256,7 +258,7 @@
 
     <div id="skills-section"></div>
 
-    <section id="skills">
+    <section id="skills" class="section">
         <div class="wave-divider skills-divider-1">
             <svg class="desktop-divider"
    viewBox="0 0 1440 320">
@@ -352,7 +354,6 @@
     <div class="modal">
         <div class="modal-content">
             <div class="modal-dynamic-data inModal"></div>
-            <div class="modal-dynamic-img inModal"></div>
         </div>
     </div>
 
@@ -372,7 +373,7 @@
 
     <div id="resume-section"></div>
 
-    <section id="resume">
+    <section id="resume" class="section">
         <div id="about-flex-4" class="about-flex">
             <div>
                 <div class="leftright-1 left">
@@ -403,7 +404,6 @@
     </section>
 
     <div id="contact-section"></div>
-    </div>
     <div id="contactSection" class="intersect">
         <div class="wave-divider contact-divider">
             <svg class="desktop-divider"
@@ -474,7 +474,7 @@
         <div id="contactWrapper">
             <canvas data-star-count="15"></canvas>
         </div>
-        <section id="contact">
+        <section id="contact" class="section">
             <div id="contactContent">
                 <div id="contactTitle"><h2>Contact Me</h2></div>
                 <form action="https://formsubmit.co/7b39648cf2e52e64cef3af94fe3d51ed" method="POST">
@@ -501,10 +501,11 @@
                 <div>
                     <h4><span class="highlight-1">Navigation</span></h4>
                     <ul id="footer-nav">
-                        <li><a href="#hero_header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#top-section">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#resume-section">Resume</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -530,8 +531,6 @@
     <script type="text/javascript" src="js/carouselBuild.js"></script>
     <script type="text/javascript" src="js/carouselArrows.js"></script>
     <script type="text/javascript" src="js/intersect.js"></script>
-    <script type="text/javascript" src="js/orientation.js"></script>
-    <script type="text/javascript" src="js/videoPlayer.js"></script>
 
     <script>
         window.onload = async () => {
@@ -541,7 +540,6 @@
             await buildCarouselHTML();
             initializeCarouselScroll();
             initializeObservers();
-            lockOrientationOnMobile();
         }
 
     </script>
