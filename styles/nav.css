@@ -43,14 +43,14 @@
 
 
 #navBar li:hover {
-    border: 3px dotted white;
+    border: 3px dotted rgba(255, 255, 255, 0.7);
 
 }
 
 .navBarScroll {
     font-size: 20px !important;
     font-weight: 500 !important;
-    background-color: #1c011fc0 !important;
+    background-color: #500059 !important;
    /* backdrop-filter: blur(10px);*/
     box-shadow: 0 5px 10px #0000004f;
 }

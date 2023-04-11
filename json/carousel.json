@@ -4,11 +4,11 @@
         "title": "Node.js",
         "image": "./images/logos/300px/node-js-logo-300px.png",
         "detail": {
-            "description" : "I helped maintain the server-side code for a previous employer. The back-end used the Express.js framework in the Node.js environment. EJS was also used for faster development and deployment of web pages. During my time at this company, I helped develop various web pages and their corresponding components, such as carousels, results pages, watchlist pages, pages for sports schedules, etc.",
+            "description" : "I helped maintain the server-side code for a previous employer. The back-end used the <span class='modal-descr-highlight' style='--back-color:#319494'>Express.js</span> framework in the Node.js environment. <span class='modal-descr-highlight' style='--back-color:#319494'>EJS</span> was also used for faster development and deployment of web pages. During my time at this company, I helped <span class='modal-descr-highlight' style='--back-color:#319494'>develop</span> various web pages and their corresponding components, such as carousels, results pages, watchlist pages, pages for sports schedules, etc.",
             "image": "./images/work/channelGuide.png",
             "title_highlight": "#319494",
             "text_color": "#113535",
-            "additional_html": ""
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#319494;border-color:#319494;--shadow:4px 4px 0 #319494, 8px 8px 0 #319494;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#319494\"></div>"
         }
     },
     {
@@ -16,11 +16,11 @@
         "title": "MySQL",
         "image": "./images/logos/300px/mysql-logo-300px.png",
         "detail": {
-            "description" : "",
+            "description" : "I have worked with <span class='modal-descr-highlight' style='--back-color:#f7971d'>MySQL</span> extensively for the past year and am familiar with populating and maintaining producting-ready databases. I am also familiar with creating Python scripts to automate database <span class='modal-descr-highlight' style='--back-color:#f7971d'>CRUD</span> operations. The image below shows a statement that joins 4 tables of a sample database for a fictional ecommerce store. the <u>Customer_ID</u> and <u>Name</u> come from a <span class='modal-descr-highlight' style='--back-color:#f7971d'>Customers</span> table. The <u>Address</u> is the shipping address and is the result of concatenating 4 separate columns of the same table. The <u>Product_Name</u> and <u>Price</u> come from a <span class='modal-descr-highlight' style='--back-color:#f7971d'>Products</span> table.",
             "image": "./images/work/mySQL.png",
-            "title_highlight": "linear-gradient(90deg, #2994d4, #f7971d)",
-            "additional_html": ""
-            
+            "title_highlight": "linear-gradient(90deg, #2994d4, #2994d4 49%, #f7971d 50%, #f7971d)",
+            "text_color": "#003c60",
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#2994d4;border-color:#2994d4;--shadow:4px 4px 0 #2994d4, 8px 8px 0 #2994d4;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#2994d4\"></div>"            
         }
     },
     {
@@ -28,10 +28,11 @@
         "title": "RESTful APIs",
         "image": "./images/logos/300px/rest-api-logo-300px.svg",
         "detail": {
-            "description" : "",
-            "image": "./images/work/RESTfulAPI.png",
+            "description" : "At my previous job, I helped create and maintain Node.js APIs that were used in the <span class='modal-descr-highlight' style='--back-color:#13ad99'>production</span> environment. I used the <span class='modal-descr-highlight' style='--back-color:#13ad99'>Postman</span> platform to test the APIs I was developing. The image below shows a GET <span class='modal-descr-highlight' style='--back-color:#13ad99'>request</span> for spoonacular's API in Postman. This is a free-to-try API I found online.",
+            "image": "./images/work/RESTful_API.png",
             "title_highlight": "#13ad99",
-            "additional_html": ""
+            "text_color": "#073e37",
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#13ad99;border-color:#13ad99;--shadow:4px 4px 0 #13ad99, 8px 8px 0 #13ad99;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#13ad99\"></div>"
         }
     },
     {
@@ -39,10 +40,12 @@
         "title": "HTML",
         "image": "./images/logos/300px/html5-logo-300px.png",
         "detail": {
-            "description" : "",
+            "description" : "I wouldn't be much of a web developer if I couldn't write HTML 😅. For a live demonstration, look no further than this web page; I wrote all of the HTML for it. I can also create dynamic pages. In fact all of the data on these cards, <span style=\"color: white;\"><i>even the words you're reading right now,</i></span> come from <span class='modal-descr-highlight' style='--back-color:linear-gradient(90deg, #e600ff, #ff7700);'><a href=\"./json/carousel.json\" target=\"_blank\" style=\"--text-shadow:2px 2px 0 #f16529;\">this JSON file.</a></span> All of these cards' HTML were inserted into the web page after it had already been loaded on your browser. The image below shows the HTML document for this web page.",
             "image": "./images/work/htmlGif.gif",
             "title_highlight": "#f16529",
-            "additional_html": ""
+            "text_color": "#804f4f",
+            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#f16529;border-color:#f16529;--shadow:4px 4px 0 #f16529, 8px 8px 0 #f16529;\">SHOW IMAGE <div>&#9654;</div></div><div class=\"inModal imgDivider\" style=\"background-color:#f16529\"></div>"
+
         }
     },
     {
@@ -50,9 +53,10 @@
         "title": "CSS",
         "image": "./images/logos/300px/css3-logo-300px.png",
         "detail": {
-            "description" : "",
+            "description" : "What's a website without  <span class='modal-descr-highlight' style='--back-color:#3082c6'>styling?</span> I wrote all of the  <span class='modal-descr-highlight' style='--back-color:#3082c6'>CSS</span> for this web page, including the  <span class='modal-descr-highlight' style='--back-color:#3082c6'>button</span> below. Click the button if you'd like to see a  <span class='modal-descr-highlight' style='--back-color:#3082c6'>video</span> of it being styled.",
             "image": "",
             "title_highlight": "#3082c6",
+            "text_color": "#153b5b",
             "additional_html": "<div id=\"CSS-example\" class=\"inModal\" onclick=\"openVideo('modal-vid-1')\">CSS⚡Rocks!</div>",
             "video_url": "https://www.youtube.com/embed/vOkj7gRQ3z8"
         }
@@ -64,7 +68,7 @@
         "detail": {
             "description" : "",
             "image": "",
-            "title_highlight": "#d1aa23",
+            "title_highlight": "#ffcd20",
             "additional_html": ""
         }
     },
@@ -75,7 +79,7 @@
         "detail": {
             "description" : "",
             "image": "",
-            "title_highlight": "linear-gradient(90deg, #3770a0, #ffcf3e)",
+            "title_highlight": "linear-gradient(90deg, #3770a0, #3770a0 49%, #ffcf3e 50%, #ffcf3e)",
             "additional_html": ""
         }
     },

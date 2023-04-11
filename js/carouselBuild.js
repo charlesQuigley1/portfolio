@@ -62,12 +62,14 @@ function buildItem(item) {
     htmlStr += "<h3 class=\"inModal\" style=\"--modal-title-color: " + item.detail.title_highlight + "\">" + item.title + "</h3>"
     htmlStr += "<div class=\"modal-close\" onclick=\"clickOutOfModal('buttonClick')\">&#x2715;</div>";
     htmlStr += "</div>";
-    htmlStr += "<p class=\"inModal\" style=\"color:" + item.detail.text_color + "\">" + item.detail.description + "</p>";
+    htmlStr += "<p class=\"inModal modal-descr\" style=\"color:" + item.detail.text_color + "\">" + item.detail.description + "</p>";
     htmlStr += item.detail.additional_html;
     htmlStr += "<div class=\"youtube-data\">";
     htmlStr += item.detail.video_url;
     htmlStr += "</div>";
+    htmlStr += "<div class=\"inModal imgHolder\">";
     htmlStr += "<a class=\"inModal\" href=" + item.detail.image + "> <img class=\"inModal\" src=\"" + item.detail.image + "\"></a>";
+    htmlStr += "</div>";
     htmlStr += "</div>";
     htmlStr += "</div>"; 
     htmlStr += "</div>";

@@ -4,7 +4,7 @@
         padding: 8px 60px;
     }
 
-    #resume_btn a:hover span {
+    #resume_btn a:hover span, #contact form button:hover span {
         opacity: 0;
         transform: translateX(-200%);
     }
@@ -13,6 +13,7 @@
         border: 2px solid rgba(255, 255, 255, 0.4);
         background-color: #500259;
         box-shadow: none;
+        padding: 10px 100px;
     }
 }
 

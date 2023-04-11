@@ -36,7 +36,7 @@ function initializeCanvas(c) {
     let ctx = c.getContext("2d");
 
     c.width = parentDiv.getBoundingClientRect().width;
-    c.height = parentDiv.getBoundingClientRect().height;
+    c.height = parentDiv.getBoundingClientRect().height - 100;
    
     const dpi = window.devicePixelRatio;
     c.getContext('2d').scale(dpi, dpi);

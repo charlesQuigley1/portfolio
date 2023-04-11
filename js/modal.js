@@ -28,3 +28,12 @@ function closeVideo(id) {
     ytPlayer.classList.remove("openVideo");
 }
 
+
+function showModalImg() {
+    let imgBtn = document.querySelector(".modal .imgBtn");
+    let img = document.querySelector(".modal img");
+
+    img.classList.toggle('modalImgOpen');
+    imgBtn.classList.toggle('modalImgOpen');
+
+ }
