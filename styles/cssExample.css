@@ -105,12 +105,6 @@ div#CSS-example:hover {
 
 
 
-.videoBtn {
-    padding: 8px;
-    border-radius: 20px;
-    background-color: blue;;
-}
-
 .openVideo {
     display: flex;
 }

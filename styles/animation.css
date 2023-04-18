@@ -16,7 +16,9 @@
    /* -webkit-animation: glow 8s ease-in-out infinite alternate;
     -moz-animation: glow 8s ease-in-out infinite alternate;
     animation: glow 8s ease-in-out infinite alternate;*/
-    filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #bc00e6);
+    filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #d001ff);
+    filter: drop-shadow(0 0 2px #d001ff);
+    
    
 }
 
@@ -319,5 +321,27 @@
   }
   99% {
     transform: rotateZ(0deg);
+  }
+}
+
+@keyframes brush {
+  0% {
+    opacity: 0;
+    -webkit-mask-position: -200%;
+  }
+  100% {
+    opacity: 0.6;
+    -webkit-mask-position: center;
+  }
+}
+
+@-webkit-keyframes brush {
+  0% {
+    opacity: 0;
+    -webkit-mask-position: -200%;
+  }
+  100% {
+    opacity: 0.6;
+    -webkit-mask-position: center;
   }
 }

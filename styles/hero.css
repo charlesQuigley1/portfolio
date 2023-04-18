@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/magic-brush');
+
 #hero_wrapper {
     position: relative;
     background-color: var(--main-color);
@@ -46,6 +48,10 @@
     z-index: 7;
 }
 
+.wave-divider.skills-divider-2 .mobile-divider {
+    transform: rotateZ(180deg);
+}
+
 #contactSection .wave-divider {
     position: relative;
     top: 0;
@@ -68,8 +74,9 @@
 #hero_header{
     position: relative;
     width: 100%;
-    height: 750px;
+    height: 600px;
 }
+
 
 canvas {
     position: relative;
@@ -84,7 +91,8 @@ canvas {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: url("../images/hd-wallpaper.png");
+
+    background: url("../images/wallpapers/hd-wallpaper.png");
     transform: rotateZ(180deg);
     z-index: 1;
     opacity: 100%;
@@ -92,6 +100,75 @@ canvas {
     background-size: cover;
     background-position: top;
 }
+
+#hero_wrapper, #skillsWrapper {
+    /*position: relative;*/
+}
+
+
+/*.backgroundImg1 {
+    background:url("../images/wallpapers/try10.jpg");
+    background-color: rgba(111, 53, 136, 0.4);
+    background-blend-mode: overlay;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    background-size: cover;
+    height: 105%;
+    
+}
+
+.backgroundImg2 {
+    background:url("../images/wallpapers/space.jpg");
+    background-color: rgba(111, 53, 136, 0.4);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+.backgroundImg3 {
+    background: url("../images/wallpapers/try30.jpg");
+    background-color: rgba(111, 53, 136, 0.4);
+    background-blend-mode: overlay;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.parallaxParent {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.parallaxParent > * {
+    height: 150%;
+    position: relative;
+    top: -80%;
+    background-size: cover;
+}
+
+#hero_wrapper .parallaxParent, #contactWrapper .parallaxParent {
+    height: 110%;
+}
+
+#skillsWrapper .parallaxParent {
+    top: 0%;
+    height: 100%;
+} */
+
 
 #hero_profilepic {
     position: relative;
@@ -166,11 +243,44 @@ canvas {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: space;
-    z-index: 1;
-    color: transparent;
-    text-shadow: 0 0 #ffffff61;
+    font-family: space, sans-serif;
+    /*font-family: 'Magic Brush', sans-serif;
+    font-family: 'Finger Paint', sans-serif;*/
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px #959595bb, 4px 4px #959595bb, 6px 6px #959595bb;
 }
+
+#title-brush-stroke {
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+
+#title-brush-stroke::before {
+    position: absolute;
+    content: '';
+    background: url(../images/wallpapers/titleRocket.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.3;
+    display: block;
+
+    /*-webkit-animation: brush 0.6s 0.6s 1 backwards;
+    -moz-animation:    brush 0.6s 0.6s 1 backwards;
+    -o-animation:      brush 0.6s 0.6s 1 backwards;
+    animation:         brush 0.6s 0.6s 1 backwards;*/
+
+}
+
+
+
 
 #outerTitleBox {
     display: flex;
@@ -178,7 +288,9 @@ canvas {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    border: 2px dotted rgba(255, 255, 255, 0.4);
+   /* border: 2px dotted rgba(255, 255, 255, 0.4); */
+    width: fit-content;
+    margin: 0 auto;
 }
 
 #innerTitleBox {
@@ -187,7 +299,7 @@ canvas {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border: 1px dotted rgba(255, 255, 255, 0.3);
+   /* border: 1px dotted rgba(255, 255, 255, 0.3); */
 }
 
 #innerTitleBox h2 {

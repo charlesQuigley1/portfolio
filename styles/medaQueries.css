@@ -13,14 +13,29 @@
         border: 2px solid rgba(255, 255, 255, 0.4);
         background-color: #500259;
         box-shadow: none;
-        padding: 10px 100px;
+        padding: 8px 60px;
     }
+
+    #footer-nav li:hover::after, #footer #resumeAdd:hover::after {
+        background-color: inherit;
+    }
+
+    .modal-descr-highlight:hover::after {
+        height: 30%;
+    }
+
+    .videoBtn:hover {
+        background-color: #676767;
+        color: white;
+        border: 2px solid #676767;
+    }
+
 }
 
 
 @media screen and (max-width: 1500px) {
     #footer-content {
-        width: 98%;
+        width: 100%;
         justify-content: space-evenly;
     }
 
@@ -39,6 +54,18 @@
 @media  screen and (max-width: 1000px) {
     #about-flex-1 h2 {
         font-size: 1.4em;
+    }
+
+    #footer-content h4 {
+        font-size: 1.2em;
+    }
+
+    #footer-content #footer-nav li {
+        font-size: 1em;
+    }
+
+    #footer-content li ul li {
+        font-size: 0.9em;
     }
 }
 
@@ -60,6 +87,10 @@
         margin: 0 auto;
         z-index: 1;
     }
+
+    section {
+        padding: 0 40px;
+    }
 }
 
 
@@ -68,17 +99,41 @@
     #about {
         padding-top: 40px;
         padding-bottom: 60px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        box-shadow: none;
+    }
+
+    .inModal.imgDivider {
+        width: 100%;
+    }
+
+    #hero_header {
+        height: 700px;
     }
 
     .backgroundImg {
-        background: url("../images/hd-wallpaper.png");
+       /* background: url("../images/hd-wallpaper.png"); */
+       /*background: url("../images/wallpapers/try10_mobile.jpg"), #500059;*/
        /* background-color: #1c011f54; */
-        position: fixed;
+       /* position: fixed;
         height: 100vh;
         width: 100vw;
-        background-size: cover;
-        transform: rotateZ(180deg);
-        background-position: top;
+        background-size: cover;*/
+        /*transform: rotateZ(180deg);*/
+
+    }
+
+    .glow {
+        filter: none;
+    }
+
+    #title-brush-stroke {
+        width: 95%;
+    }
+    
+    #title-brush-stroke::before {
+        /*transform: scaleY(1.5);*/
     }
 
     .modal {
@@ -109,9 +164,17 @@
         border-top: 2px solid #696969;
     }
 
+    .modal-descr-highlight:hover::after {
+        height: 100%;
+    }
+
+    .modal-descr-highlight::after {
+        height: 100%;
+    }
+
     .wave-divider {
         z-index: 6;
-        bottom: -180px;
+        bottom: 0;
         transform: none;
     }
 
@@ -299,15 +362,15 @@
 
     #resume_btn a:link, #resume_btn a:visited, #resume_btn a:hover, #resume_btn a:active, #contact form button {
         font-size: 1.5em;
-        font-weight: 800;
-        padding: 14px 80px;
+        /* font-weight: 800; */
+       /*  padding: 14px 80px; */
     }
 
     #contact form button {
         border-radius: 50px;
         font-weight: 200;
         margin-top: 80px;
-        padding: 14px 100px;
+        padding: 8px 60px;
     }
 
     
@@ -473,9 +536,28 @@
         padding-bottom: 20px;
     }
 
+    .youtubePlayer {
+        z-index: 1000;
+    }
+
+    .youtubeContainer {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .youtubePlayer iframe {
+        width: 100%;
+        height: 315px;
+    }
+
 }
 
 @media screen and (max-width: 650px) { 
+
+    #about {
+        padding-top: 0;
+    }
 
     #contact-section, #skills-section, #footer-section {
         padding: 0;
@@ -552,11 +634,11 @@
     }
 
     #innerTitleBox h2 {
-        font-size: 1.8em;
+        font-size: 3em;
     }
 
     #innerTitleBox h4 {
-        font-size: 1.2em;
+        font-size: 1.6em;
         padding: 20px 0 0 0;
     }
 
@@ -564,9 +646,6 @@
         top: 35%;
     }
 
-    #about {
-        padding-top: 100px;
-    }
 
     #contact-section, #skills-section, #footer-section {
         padding: 0;
@@ -580,13 +659,13 @@
         margin: 20px 20px 30px;
     }
 
-    #outerTitleBox {
+    /*#outerTitleBox {
         border: 3px dotted rgba(255, 255, 255, 0.4);
     }
 
     #innerTitleBox {
         border: 2px dotted rgba(255, 255, 255, 0.3);
-    }
+    }*/
 
     #footer-content {
         flex-direction: column;
@@ -628,6 +707,13 @@
 
     }
 
+    #innerTitleBox h2 {
+        font-size: 2.5em;
+    }
+
+    #innerTitleBox h4 {
+        font-size: 1.4em;
+    }
 
     #about-flex-2 {
         flex-direction: column-reverse;
@@ -670,7 +756,8 @@
     }
 
     #resume_btn a:link, #resume_btn a:visited, #resume_btn a:hover, #resume_btn a:active, #contact form button {
-        font-size: 1.2em;
+        font-size: 1em;
+        padding: 8px 60px;
     }
 
     .carousel-wrapper {
@@ -714,12 +801,36 @@
         width: 60%;
     }
 
+    #footer-content h4 {
+        font-size: 1.2em;
+    }
+
+    #footer-content #footer-nav li {
+        font-size: 1em;
+    }
+
+    #footer-content li ul li {
+        font-size: 1em;
+    }
 }
 
 
 @media screen and (max-width: 450px) {
+
+    #innerTitleBox h4 {
+        font-size: 1.2em;
+    }
+
+    #innerTitleBox h2 {
+        font-size: 2.2em;
+    }
+
     #hero_header {
-        height: 600px;
+        height: 700px;
+    }
+
+    #title {
+        top: 38%;
     }
 
     #outerTitleBox {
@@ -727,7 +838,16 @@
     }
 
     #about {
-        padding: 0 10px 0 20px;
+        padding: 10px 10px 80px 10px;
+    }
+
+    #resume {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    #hero_profilepic {
+        margin: 0 0 40px 0;
     }
 
 
@@ -749,11 +869,11 @@
     }
 
     #about-flex-3 {
-        margin: 40px 10px 50px 20px;
+        margin: 20px 10px 40px 20px;
     }
 
     .carousel-wrapper {
-        margin: 0 0 50px 0;
+        margin: 0 0 30px 0;
     }
 
     #about-flex-4 h2 {
@@ -793,7 +913,7 @@
     .cItem {
         width: 110px;
         height: 160px;
-        border-radius: 10px;
+        border-radius: 14px;
     }
 
     .cItem button img {
@@ -816,9 +936,15 @@
 
 @media screen and (max-width: 400px) {
     #innerTitleBox h4 {
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 10px 0 0 0;
     }
+
+    #innerTitleBox h2 {
+        font-size: 2em;
+    }
+
+    
 
     #about-flex-1 h2 {
         font-size: 0.9em;
@@ -865,7 +991,7 @@
     }
 
     #about {
-        margin: 130px 10px 0 10px;
+        /*margin: 130px 10px 0 10px;*/
     }
 
     #about-flex-1 {

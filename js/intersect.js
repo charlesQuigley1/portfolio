@@ -28,33 +28,60 @@ function attachObservers() {
     });
 
     let sections = document.querySelectorAll(".section");
-    console.log(sections);
+
+    let viewportHeight = window.innerHeight;
+    let navBar = document.querySelector("#navBar");
+
+    let margin = Math.ceil(viewportHeight - navBar.getBoundingClientRect().height) + 10 + "px";
+
+    console.log(margin);
 
     const sectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            console.log(entry.target);
-
             let navBarItems = document.querySelectorAll("#navBar li");
             for (let i = 0; i < navBarItems.length; i++) {
                 if (entry.isIntersecting) {
+                    console.log(entry.target.id)
                     if (navBarItems[i].classList[0] === entry.target.id) {
-                        console.log(navBarItems[i].classList[0]);
+                        for (let j = 0; j < navBarItems.length; j++) {
+                            navBarItems[j].classList.remove("sectionActive");
+                        }
                         navBarItems[i].classList.add("sectionActive");
-                    }
-                    else {
-                        navBarItems[i].classList.remove("sectionActive");
                     }
                 }
             }
         })
     },
     {
-        rootMargin: '0px 0px 0px 0px',
-        threshold: 0.5
+        rootMargin: '-50% 0px',
+        threshold: 0
     });
+
+    const sectionObserverMobile = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            let mobileNavBarItems = document.querySelectorAll("#mobile-navBar-slideOut li");
+            for (let i = 0; i < mobileNavBarItems.length; i++) {
+                if (entry.isIntersecting) {
+                    if (mobileNavBarItems[i].classList[0] === entry.target.id) {
+                        mobileNavBarItems[i].classList.add("sectionActive");
+                    }
+                    else {
+                        mobileNavBarItems[i].classList.remove("sectionActive");
+                    }
+                }
+            }
+        })
+    },
+    {
+        rootMargin: '-50% 0px',
+        threshold: 0
+    });
+
+    
 
     sections.forEach(section => {
         sectionObserver.observe(section);
+        sectionObserverMobile.observe(section);
     });
 
 }

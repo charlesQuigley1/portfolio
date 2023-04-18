@@ -5,11 +5,11 @@
         "image": "./images/logos/300px/node-js-logo-300px.png",
         "modal_background_color": "rgb(25 101 101 / 65%)",
         "detail": {
-            "description" : "I helped maintain the server-side code for a previous employer. The back-end used the <span class='modal-descr-highlight' style='--back-color:#319494'>Express.js</span> framework in the Node.js environment. <span class='modal-descr-highlight' style='--back-color:#319494'>EJS</span> was also used for faster development and deployment of web pages. During my time at this company, I helped <span class='modal-descr-highlight' style='--back-color:#319494'>develop</span> various web pages and their corresponding components, such as carousels, results pages, watchlist pages, pages for sports schedules, etc.",
-            "image": "./images/work/channelGuide.png",
+            "description" : "I am familiar with maintaining and building on server-side code. I have worked with the <span class='modal-descr-highlight' style='--back-color:#319494'>Express.js</span> framework in the Node.js environment. I am also accustomed to using <span class='modal-descr-highlight' style='--back-color:#319494'>EJS</span> for faster development and deployment of web pages. In the past, I have helped <span class='modal-descr-highlight' style='--back-color:#319494'>develop</span> various web pages and their corresponding components, such as carousels, search result pages, pages for sports schedules, etc.",
+            "image": "",
             "title_highlight": "#319494",
             "text_color": "#113535",
-            "additional_html": "<div class=\"inModal imgBtn\" onclick=\"showModalImg();\" style=\"color:#319494;border-color:#319494;--shadow:4px 4px 0 #319494, 8px 8px 0 #319494;\">SHOW IMAGE <div><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\"> <path d=\"m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\"/></svg></div></div><div class=\"inModal imgDivider\" style=\"background-color:#319494\"></div>"
+            "additional_html": ""
         }
     },
     {
@@ -31,7 +31,7 @@
         "image": "./images/logos/300px/rest-api-logo-300px.svg",
         "modal_background_color": "rgb(9 83 73 / 65%)",
         "detail": {
-            "description" : "At my previous job, I helped create and maintain Node.js APIs that were used in the <span class='modal-descr-highlight' style='--back-color:#13ad99'>production</span> environment. I used the <span class='modal-descr-highlight' style='--back-color:#13ad99'>Postman</span> platform to test the APIs I was developing. The image below shows a GET <span class='modal-descr-highlight' style='--back-color:#13ad99'>request</span> for spoonacular's API in Postman. This is a free-to-try API I found online.",
+            "description" : "For a previous job, I helped create and maintain Node.js APIs that were used in the <span class='modal-descr-highlight' style='--back-color:#13ad99'>production</span> environment. I used the <span class='modal-descr-highlight' style='--back-color:#13ad99'>Postman</span> platform to test the APIs I was developing. The image below shows a GET <span class='modal-descr-highlight' style='--back-color:#13ad99'>request</span> for spoonacular's API in Postman. This is a free-to-try API I found online to use as an example.",
             "image": "./images/work/RESTful_API.png",
             "title_highlight": "#13ad99",
             "text_color": "#073e37",
@@ -61,7 +61,7 @@
             "description" : "What's a website without  <span class='modal-descr-highlight' style='--back-color:#3082c6'>styling?</span> I wrote all of the  <span class='modal-descr-highlight' style='--back-color:#3082c6'>CSS</span> for this web page, including the  <span class='modal-descr-highlight' style='--back-color:#3082c6'>button</span> below. Click the button if you'd like to see a  <span class='modal-descr-highlight' style='--back-color:#3082c6'>video</span> of it being styled.",
             "image": "",
             "title_highlight": "#3082c6",
-            "text_color": "#153b5b",
+            "text_color": "#13456f",
             "additional_html": "<div id=\"CSS-example\" class=\"inModal\" onclick=\"openVideo('modal-vid-1')\">CSS⚡Rocks!</div>",
             "video_url": "https://www.youtube.com/embed/vOkj7gRQ3z8"
         }
@@ -72,9 +72,10 @@
         "image": "./images/logos/300px/js-logo-300px.png",
         "modal_background_color": "rgb(141 114 22 / 65%)",
         "detail": {
-            "description" : "",
+            "description" : "From asynchronous <span class='modal-descr-highlight' style='--back-color:#ff9120'>fetch</span> requests to intersection observers, I am very familiar with coding in JavaScript. In fact, I wrote all of the <span class='modal-descr-highlight' style='--back-color:#ff9120'>scripts</span> used on this webpage 👀",
             "image": "",
             "title_highlight": "#ffcd20",
+            "text_color": "#81471a",
             "additional_html": ""
         }
     },
@@ -84,10 +85,12 @@
         "image": "./images/logos/300px/python-logo-300px.png",
         "modal_background_color": "rgb(34 75 109 / 65%)",
         "detail": {
-            "description" : "",
+            "description" : "I have been working with Python for about a year now and have helped create scripts that <span class='modal-descr-highlight' style='--back-color:#3770a0'>automatate</span> the generation of content for social media as well as automate database <span class='modal-descr-highlight' style='--back-color:#3770a0'>CRUD</span> operations. Clicking the button below will display a <span class='modal-descr-highlight' style='--back-color:#3770a0'>video</span> in which I use a Python script to <span class='modal-descr-highlight' style='--back-color:#3770a0'>insert</span> rows into a sample database.",
             "image": "",
             "title_highlight": "linear-gradient(90deg, #3770a0, #3770a0 49%, #ffcf3e 50%, #ffcf3e)",
-            "additional_html": ""
+            "text_color": "#153e60",
+            "additional_html": "<div class=\"inModal videoBtn\" onclick=\"openVideo('modal-vid-1')\" style='--hover-color:#ffcf3e'>watch the video</div>",
+            "video_url": "https://www.youtube.com/embed/9LqwJbI88JY"
         }
     },
     {
@@ -96,9 +99,10 @@
         "image": "./images/logos/300px/wordpress-logo-300px.png",
         "modal_background_color": "rgb(53 109 133 / 65%)",
         "detail": {
-            "description" : "",
+            "description" : "I have experience working with <span class='modal-descr-highlight' style='--back-color:#56add2'>Elementor</span> and am familiar with the use of various wordpress plugins, such as those that help with <span class='modal-descr-highlight' style='--back-color:#56add2'>SEO</span> as well as those that <span class='modal-descr-highlight' style='--back-color:#56add2'>optimize</span> database performance.",
             "image": "./images/work/wordpress.png",
             "title_highlight": "#56add2",
+            "text_color": "#20495a",
             "additional_html": ""
         }
     }

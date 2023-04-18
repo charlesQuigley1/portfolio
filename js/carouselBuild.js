@@ -15,7 +15,7 @@ async function buildCarouselHTML() {
     cWrapper.innerHTML += carouselAssets("leftBtn", cView.id);
 
     cJSON.forEach(item => {
-        html += buildItem(item);
+        html += buildItem(item, cView.id);
     });
 
     cView.innerHTML = html;
@@ -46,7 +46,7 @@ async function fetchCarouselData() {
     return json;
 }
 
-function buildItem(item) {
+function buildItem(item, carousel_view_id) {
     let idName = "c-item-" + item.id;
     let className = "cItem";
     let modalName = "modal-" + item.id;
@@ -61,7 +61,7 @@ function buildItem(item) {
     htmlStr += "<div class=\"inModal modal-background-color\">" + item.modal_background_color + "</div>";
     htmlStr += "<div class=\"modal-data-title inModal\">";
     htmlStr += "<h3 class=\"inModal\" style=\"--modal-title-color: " + item.detail.title_highlight + "\">" + item.title + "</h3>"
-    htmlStr += "<div class=\"modal-close\" onclick=\"clickOutOfModal('buttonClick')\">&#x2715;</div>";
+    htmlStr += "<div class=\"modal-close\" onclick=\"clickOutOfModal('buttonClick')\">" + carouselAssets("closeIcon", carousel_view_id) + "</div>";
     htmlStr += "</div>";
     htmlStr += "<p class=\"inModal modal-descr\" style=\"color:" + item.detail.text_color + "\">" + item.detail.description + "</p>";
     htmlStr += item.detail.additional_html;
@@ -93,12 +93,21 @@ function carouselAssets(assetName, carouselID) {
         "4.796a1 1 0 0 1 0 1.506z\"/></svg>";
         + "</div></button>";
 
+    let closeIcon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" fill=\"currentColor\" class=\"bi bi-x\" viewBox=\"0 0 16 16\">" +
+                    "<path d=\"M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z\"/>" +
+                    "</svg>";
+
     if (assetName === "leftBtn") {
         return leftBtn;
     }
 
     if (assetName === "rightBtn") {
         return rightBtn;
+    }
+
+    
+    if (assetName === "closeIcon") {
+        return closeIcon;
     }
 
     return null;

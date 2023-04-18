@@ -1,11 +1,11 @@
 var lastScrollTop = 0;
 
-// When the user scrolls down 100px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+window.addEventListener("scroll", scrollFunction);
+
 
 function scrollFunction() {
 
-  var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+  var st = window.pageYOffset || document.documentElement.scrollTop; 
   if (st > lastScrollTop) {
     document.getElementById("navBar").classList.add("right");
 
