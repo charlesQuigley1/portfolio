@@ -2,6 +2,12 @@
     font-family: space;
     src: url(../fonts/SpaceMono-Bold.ttf);
 }
+@font-face {
+    font-family: monoton;
+    src: url(../fonts//Monoton-Regular.ttf);
+}
+
+
 
 :root {
     --main-color: #1c011f;
@@ -347,8 +353,13 @@ section {
 #contactSection {
     padding: 0 0 120px 0;
     position: relative;
-    margin-top: -20px;
+  
 
+}
+
+#resume {
+    margin-bottom: 20px;
+    margin-top: -4px;
 }
 
 #contact-section, #skills-section, #footer-section, #resume-section {

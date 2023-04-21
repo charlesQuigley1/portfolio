@@ -65,10 +65,6 @@
     margin-bottom: -4px;
 }
 
-#resume {
-    margin-top: -4px;
-}
-
 
 
 #hero_header{
@@ -239,11 +235,12 @@ canvas {
     position: absolute;
     display: flex;
     width: 100%;
-    top: 22%;
+    top: 24%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: space, sans-serif;
+    font-family: monoton, sans-serif;
+    word-spacing: 1em;
     /*font-family: 'Magic Brush', sans-serif;
     font-family: 'Finger Paint', sans-serif;*/
     z-index: 2;

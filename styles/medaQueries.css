@@ -42,6 +42,12 @@
     #footer-content > div {
         width: initial;
     }
+
+    #title {
+        top: 28%;
+    }
+
+
     
 }
 
@@ -70,11 +76,19 @@
 }
 
 @media  screen and (max-width: 900px) {
+    #about-flex-3 {
+        margin: 80px 80px 60px 70px;
+    }
+
+    .carousel-wrapper {
+        margin: 0 0 80px 0;
+    }
+    
     #contact {
-        width: 100%;
+        width: 90%;
         box-shadow: none;
-        margin: 0;
-        border-radius: 0;
+        margin: 0 auto;
+        border-radius: 10px;
     }
 
     #about-flex-1 h2 {
@@ -83,7 +97,7 @@
 
     .modal-content {
         position: relative;
-        width: 100%;
+        width: 96%;
         margin: 0 auto;
         z-index: 1;
     }
@@ -91,6 +105,14 @@
     section {
         padding: 0 40px;
     }
+}
+
+@media  screen and (max-width: 800px) {
+    #innerTitleBox h2 {
+        font-size: 3.5em;
+    }
+
+
 }
 
 
@@ -108,8 +130,37 @@
         width: 100%;
     }
 
+
     #hero_header {
         height: 700px;
+    }
+
+    #outerTitleBox, #innerTitleBox {
+        justify-self: start;
+        align-items: start;
+    }
+
+    #innerTitleBox h4 {
+        font-size: 1.2em;
+        text-align: left;
+        line-height: 4em;
+    }
+
+    #innerTitleBox span::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #innerTitleBox h2 {
+        font-size: 4em;
+        text-align: left;
+        line-height: 1.5em;
+    }
+    
+    #title-brush-stroke::before {
+        width: 45%;
+        left: auto;
+        right: 0;
     }
 
     .backgroundImg {
@@ -125,8 +176,9 @@
     }
 
     .glow {
-        filter: none;
-    }
+       
+        filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #d001ff);
+    } 
 
     #title-brush-stroke {
         width: 95%;
@@ -358,6 +410,8 @@
     #resume {
         padding-top: 0;
         padding-bottom: 60px;
+        margin-bottom: 0;
+        border-radius: 0;
     }
 
     #resume_btn a:link, #resume_btn a:visited, #resume_btn a:hover, #resume_btn a:active, #contact form button {
@@ -472,15 +526,13 @@
     }
     
     #title {
-        top: 26%;
+        top: 20%;
     }
 
-    #innerTitleBox h2 {
-        font-size: 3em;
-    }
 
     #outerTitleBox {
         padding: 30px;
+        margin: 0;
     }
     
     #innerTitleBox {
@@ -610,6 +662,12 @@
 }
 
 @media  screen and (max-width: 550px) {   
+
+    #title-brush-stroke::before {
+        width: 50%;
+        left: auto;
+        right: 0;
+    }
     
     section {
         padding: 0 20px;
@@ -634,16 +692,17 @@
     }
 
     #innerTitleBox h2 {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     #innerTitleBox h4 {
-        font-size: 1.6em;
+        font-size: 1.3em;
         padding: 20px 0 0 0;
+        line-height: normal;
     }
 
     #title {
-        top: 35%;
+        top: 20%;
     }
 
 
@@ -708,11 +767,15 @@
     }
 
     #innerTitleBox h2 {
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     #innerTitleBox h4 {
-        font-size: 1.4em;
+        font-size: 1.2em;
+    }
+
+    #title {
+        top: 25%;
     }
 
     #about-flex-2 {
@@ -822,7 +885,15 @@
     }
 
     #innerTitleBox h2 {
-        font-size: 2.2em;
+        font-size: 3em;
+        text-align: left;
+        line-height: 2em;
+    }
+    
+    #title-brush-stroke::before {
+        width: 60%;
+        left: auto;
+        right: -5px;
     }
 
     #hero_header {
@@ -830,7 +901,7 @@
     }
 
     #title {
-        top: 38%;
+        top: 25%;
     }
 
     #outerTitleBox {
@@ -941,13 +1012,18 @@
     }
 
     #innerTitleBox h2 {
-        font-size: 2em;
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+
+    #title {
+        top: 30%;
     }
 
     
 
     #about-flex-1 h2 {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     .about-image img {
@@ -956,11 +1032,11 @@
     }
 
     #about-flex-2 h2 {
-        font-size: 0.85em;
+        font-size: 1.1em;
     }
 
     #about-flex-3 h2 {
-        font-size: 0.85em;
+        font-size: 1.1em;
     }
 
     #footer-content h4 {
@@ -987,7 +1063,7 @@
     }
 
     #innerTitleBox h4 {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     #about {
@@ -1017,6 +1093,14 @@
 }
 
 @media screen and (max-width: 300px) {
+    #innerTitleBox h2 {
+        font-size: 2.4em;
+    }
+
+    #innerTitleBox h4 {
+        font-size: 0.7em;
+    }
+
     #hero_profilepic div {
         width: 130px;
         height: 130px;
