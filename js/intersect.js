@@ -1,5 +1,7 @@
 function initializeObservers() {
-    if("IntersectionObserver" in window){
+
+    
+    if("IntersectionObserver" in window && window.navigator.userAgent.indexOf("Edg") <= -1){
         attachObservers();
       
     }
@@ -28,13 +30,6 @@ function attachObservers() {
     });
 
     let sections = document.querySelectorAll(".section");
-
-    let viewportHeight = window.innerHeight;
-    let navBar = document.querySelector("#navBar");
-
-    let margin = Math.ceil(viewportHeight - navBar.getBoundingClientRect().height) + 10 + "px";
-
-    console.log(margin);
 
     const sectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {

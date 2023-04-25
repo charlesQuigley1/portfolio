@@ -13,45 +13,18 @@
 .glow {
     color: #fff;
     text-align: center;
-   /* -webkit-animation: glow 8s ease-in-out infinite alternate;
-    -moz-animation: glow 8s ease-in-out infinite alternate;
-    animation: glow 8s ease-in-out infinite alternate;*/
     filter: drop-shadow(0 0 1px #fff)drop-shadow(0 0 1px #fff)drop-shadow(0 0 2px #d001ff);
-    filter: drop-shadow(0 0 2px #d001ff);
+    filter: drop-shadow(0 0 2px #d001ff); 
     
    
 }
 
 
-/*.c1, .c2 {
-    width: fit-content !important;
-
-}*/
-
-
-/*.c1 h2, .c2 h2 {
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid transparent;
-}*/
 
 .c1 h2, .c2 h2 {
   white-space: nowrap;
 }
 
-/*.left{
-  transform: translateX(-150%);
-  border: 2px solid transparent;
-  position: relative;
-  opacity: 0;
-} 
-.right {
-  transform: translateX(150%);
-  border: 2px solid transparent;
-  position: relative;
-  opacity: 0;
-}*/
 
 .opaque {
   opacity: 0;
@@ -62,7 +35,12 @@
 
   opacity: 1;
   transform: translate(0);
-  transition: opacity 600ms 100ms linear, transform 400ms 100ms linear
+  transition: opacity 600ms 100ms linear, transform 400ms 100ms linear;
+}
+
+.noIntObs .opaque {
+  opacity: 1;
+  transform: translate(0);
 }
 
 
@@ -93,43 +71,6 @@
 }
 
 
-/*.observed .leftright-1 {
-  animation-delay: 0s;
-  transition: transform 0s 1s linear;
-}
-
-.observed .leftright-2 {
-  animation-delay: 0.1s;
-  transition: transform 0s 0.4s linear;
-  
-}
-
-.observed .leftright-3 {
-  animation-delay: 0.2s;
-  transition: transform 0s 0.8s linear;
-  
-}
-
-
-.observed .leftright-4 {
-  animation-delay: 0.3s;
-  transition: transform 0s 1.2s linear;
-}*/
-
-
-
-/*.observed .c1 h2{
-    -webkit-animation: typing 1.75s steps(32, end) 1s forwards, blinking 1s;
-    -moz-animation: typing 1.75s steps(32, end) 1s forwards, blinking 1s;
-    animation: typing 1.75s steps(32, end) 1s forwards, blinking 1s;
-  }
-
-.observed .c2 h2{
-    -webkit-animation: typing 1.75s steps(32, end) forwards, blinking 1s infinite;
-    -moz-animation: typing 1.75s steps(32, end) forwards, blinking 1s infinite;
-    animation: typing 1.75s steps(32, end) forwards, blinking 1s infinite;
-    animation-delay: 2.9s;
-}*/
 
 .wave {
   opacity: 0;

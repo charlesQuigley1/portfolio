@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 @font-face {
     font-family: space;
     src: url(../fonts/SpaceMono-Bold.ttf);
 }
-@font-face {
-    font-family: monoton;
-    src: url(../fonts//Monoton-Regular.ttf);
-}
+
 
 
 
@@ -317,9 +316,6 @@ section {
 #skills {
     margin-left: 0;
     margin-right: 0;
-   /* background-image: url(../images/space.jpg);*/
-   /* background-color: #1c011f91;
-    background-blend-mode: overlay;*/
     
 }
 

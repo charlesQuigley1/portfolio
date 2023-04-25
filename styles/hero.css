@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/magic-brush');
+
 
 #hero_wrapper {
     position: relative;
@@ -97,73 +97,6 @@ canvas {
     background-position: top;
 }
 
-#hero_wrapper, #skillsWrapper {
-    /*position: relative;*/
-}
-
-
-/*.backgroundImg1 {
-    background:url("../images/wallpapers/try10.jpg");
-    background-color: rgba(111, 53, 136, 0.4);
-    background-blend-mode: overlay;
-    background-position: top;
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-    background-size: cover;
-    height: 105%;
-    
-}
-
-.backgroundImg2 {
-    background:url("../images/wallpapers/space.jpg");
-    background-color: rgba(111, 53, 136, 0.4);
-    background-blend-mode: overlay;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-}
-
-
-
-.backgroundImg3 {
-    background: url("../images/wallpapers/try30.jpg");
-    background-color: rgba(111, 53, 136, 0.4);
-    background-blend-mode: overlay;
-    background-position: bottom;
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-}
-
-
-.parallaxParent {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    height: 100%;
-}
-
-.parallaxParent > * {
-    height: 150%;
-    position: relative;
-    top: -80%;
-    background-size: cover;
-}
-
-#hero_wrapper .parallaxParent, #contactWrapper .parallaxParent {
-    height: 110%;
-}
-
-#skillsWrapper .parallaxParent {
-    top: 0%;
-    height: 100%;
-} */
 
 
 #hero_profilepic {
@@ -241,8 +174,6 @@ canvas {
     align-items: center;
     font-family: monoton, sans-serif;
     word-spacing: 1em;
-    /*font-family: 'Magic Brush', sans-serif;
-    font-family: 'Finger Paint', sans-serif;*/
     z-index: 2;
     color: white;
     text-shadow: 2px 2px #959595bb, 4px 4px #959595bb, 6px 6px #959595bb;
@@ -269,11 +200,6 @@ canvas {
     opacity: 0.3;
     display: block;
 
-    /*-webkit-animation: brush 0.6s 0.6s 1 backwards;
-    -moz-animation:    brush 0.6s 0.6s 1 backwards;
-    -o-animation:      brush 0.6s 0.6s 1 backwards;
-    animation:         brush 0.6s 0.6s 1 backwards;*/
-
 }
 
 
@@ -285,7 +211,6 @@ canvas {
     justify-content: center;
     align-items: center;
     padding: 40px;
-   /* border: 2px dotted rgba(255, 255, 255, 0.4); */
     width: fit-content;
     margin: 0 auto;
 }
@@ -296,7 +221,6 @@ canvas {
     justify-content: center;
     align-items: center;
     padding: 20px;
-   /* border: 1px dotted rgba(255, 255, 255, 0.3); */
 }
 
 #innerTitleBox h2 {
