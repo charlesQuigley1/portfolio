@@ -675,6 +675,7 @@
                     <input type="email" name="email" required>
                     <label>Message</label>
                     <textarea placeholder="Your Message" class="form-control" name="message" rows="7" maxlength="1500" required></textarea>
+                    <input type="hidden" name="_next" value="https://charlesquigley1.github.io/portfolio?ThankYou=1">
                     <button type="submit">Send <span>&#10132;</span></button>
                </form>
             </div>
@@ -722,6 +723,7 @@
     <script type="text/javascript" src="js/carouselBuild.js"></script>
     <script type="text/javascript" src="js/carouselArrows.js"></script>
     <script type="text/javascript" src="js/intersect.js"></script>
+    <script type="text/javascript" src="js/formSubmission.js"></script>
 
     <script>
         window.onload = async () => {
@@ -731,6 +733,7 @@
             await buildCarouselHTML();
             initializeCarouselScroll();
             initializeObservers();
+            formSubmit();
         }
 
     </script>
