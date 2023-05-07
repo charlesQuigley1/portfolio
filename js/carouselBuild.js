@@ -22,8 +22,6 @@ async function buildCarouselHTML() {
 
     cWrapper.appendChild(cView);
 
-    console.log(cView);
-
     cWrapper.innerHTML += carouselAssets("rightBtn", cView.id);
 }
 

@@ -5,7 +5,7 @@
         "image": "./images/logos/300px/node-js-logo-300px.png",
         "modal_background_color": "rgb(25 101 101 / 65%)",
         "detail": {
-            "description" : "I am familiar with maintaining and building on server-side code. I have worked with the <span class='modal-descr-highlight' style='--back-color:#319494'>Express.js</span> framework in the Node.js environment. I am also accustomed to using <span class='modal-descr-highlight' style='--back-color:#319494'>EJS</span> for faster development and deployment of web pages. In the past, I have helped <span class='modal-descr-highlight' style='--back-color:#319494'>develop</span> various web pages and their corresponding components, such as carousels, search result pages, pages for sports schedules, etc.",
+            "description" : "I am familiar with maintaining and building on server-side code. I have worked with the <span class='modal-descr-highlight' style='--back-color:#319494'>Express.js</span> framework in the Node.js environment. I am also accustomed to using <span class='modal-descr-highlight' style='--back-color:#319494'>EJS</span> for faster development and deployment of web pages.",
             "image": "",
             "title_highlight": "#319494",
             "text_color": "#113535",
@@ -18,7 +18,7 @@
         "image": "./images/logos/300px/mysql-logo-300px.png",
         "modal_background_color": "rgb(0 60 96 / 65%)",
         "detail": {
-            "description" : "I have worked with <span class='modal-descr-highlight' style='--back-color:#f7971d'>MySQL</span> extensively for the past year and am familiar with populating and maintaining producting-ready databases. I am also familiar with creating Python scripts to automate database <span class='modal-descr-highlight' style='--back-color:#f7971d'>CRUD</span> operations. The image below shows a statement that joins 4 tables of a sample database for a fictional ecommerce store. the <u>Customer_ID</u> and <u>Name</u> come from a <span class='modal-descr-highlight' style='--back-color:#f7971d'>Customers</span> table. The <u>Address</u> is the shipping address and is the result of concatenating 4 separate columns of the same table. The <u>Product_Name</u> and <u>Price</u> come from a <span class='modal-descr-highlight' style='--back-color:#f7971d'>Products</span> table.",
+            "description" : "I have worked with <span class='modal-descr-highlight' style='--back-color:#f7971d'>MySQL</span> extensively in the past and am familiar with populating and maintaining producting-ready databases. I am also familiar with creating Python scripts to automate database <span class='modal-descr-highlight' style='--back-color:#f7971d'>CRUD</span> operations. The image below shows a statement that joins 4 tables of a sample database for a fictional ecommerce store. the <u>Customer_ID</u> and <u>Name</u> come from a <span class='modal-descr-highlight' style='--back-color:#f7971d'>Customers</span> table. The <u>Address</u> is the shipping address and is the result of concatenating 4 separate columns of the same table. The <u>Product_Name</u> and <u>Price</u> come from a <span class='modal-descr-highlight' style='--back-color:#f7971d'>Products</span> table.",
             "image": "./images/work/mySQL.png",
             "title_highlight": "linear-gradient(90deg, #2994d4, #2994d4 49%, #f7971d 50%, #f7971d)",
             "text_color": "#003c60",
@@ -31,7 +31,7 @@
         "image": "./images/logos/300px/rest-api-logo-300px.svg",
         "modal_background_color": "rgb(9 83 73 / 65%)",
         "detail": {
-            "description" : "For a previous job, I helped create and maintain Node.js APIs that were used in the <span class='modal-descr-highlight' style='--back-color:#13ad99'>production</span> environment. I used the <span class='modal-descr-highlight' style='--back-color:#13ad99'>Postman</span> platform to test the APIs I was developing. The image below shows a GET <span class='modal-descr-highlight' style='--back-color:#13ad99'>request</span> for spoonacular's API in Postman. This is a free-to-try API I found online to use as an example.",
+            "description" : "I have helped create and maintain <span class='modal-descr-highlight' style='--back-color:#13ad99'>production</span> ready APIs in Node.js. I am familiar with the <span class='modal-descr-highlight' style='--back-color:#13ad99'>Postman</span> platform for API testing. The image below shows a GET <span class='modal-descr-highlight' style='--back-color:#13ad99'>request</span> for spoonacular's API in Postman. This is a free-to-try API I found online to use as an example.",
             "image": "./images/work/RESTful_API.png",
             "title_highlight": "#13ad99",
             "text_color": "#073e37",
@@ -63,7 +63,7 @@
             "title_highlight": "#3082c6",
             "text_color": "#13456f",
             "additional_html": "<div id=\"CSS-example\" class=\"inModal\" onclick=\"openVideo('modal-vid-1')\">CSS⚡Rocks!</div>",
-            "video_url": "https://www.youtube.com/embed/vOkj7gRQ3z8"
+            "video_url": "https://www.youtube.com/embed/58lmwczMmSw"
         }
     },
     {

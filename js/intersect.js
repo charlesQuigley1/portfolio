@@ -36,7 +36,6 @@ function attachObservers() {
             let navBarItems = document.querySelectorAll("#navBar li");
             for (let i = 0; i < navBarItems.length; i++) {
                 if (entry.isIntersecting) {
-                    console.log(entry.target.id)
                     if (navBarItems[i].classList[0] === entry.target.id) {
                         for (let j = 0; j < navBarItems.length; j++) {
                             navBarItems[j].classList.remove("sectionActive");
